@@ -45,9 +45,23 @@ export class OLEDOptimizer {
     return (
       window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
       window.matchMedia('(prefers-reduced-data: reduce)').matches ||
-      // Low battery indicator (if supported)
-      navigator.getBattery?.then(battery => battery.level < 0.2) || false
+      // Check if battery API is available (Chrome/Edge)
+      this.checkLowBattery()
     )
+  }
+
+  // Check low battery status safely
+  async checkLowBattery() {
+    try {
+      if ('getBattery' in navigator) {
+        const battery = await navigator.getBattery()
+        return battery.level < 0.2
+      }
+    } catch (error) {
+      // Battery API not supported or blocked
+      console.log('[OLEDOptimizer] Battery API not available')
+    }
+    return false
   }
 
   // Apply OLED optimizations to the document
