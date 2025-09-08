@@ -1,3 +1,178 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Shiba Inu Theme - Comfortable and serene Japanese-inspired aesthetic */
+:root {
+  /* Core Shiba Inu color palette */
+  --shiba-lily: rgb(208, 109, 108);
+  --shiba-red: rgb(215, 67, 72);
+  --shiba-blue: rgb(50, 145, 207);
+  --shiba-green: rgb(63, 130, 48);
+  --shiba-yellow: rgb(228, 147, 32);
+  
+  /* Dark theme backgrounds */
+  --shiba-bg-primary: rgb(16, 20, 28);
+  --shiba-bg-secondary: rgb(24, 28, 36);
+  --shiba-bg-tertiary: rgb(32, 36, 44);
+  --shiba-bg-card: rgba(32, 36, 44, 0.8);
+  
+  /* Text colors */
+  --shiba-text-primary: rgb(220, 215, 211);
+  --shiba-text-secondary: rgb(176, 170, 165);
+  --shiba-text-muted: rgb(132, 126, 121);
+  
+  /* Terminal colors */
+  --shiba-terminal-bg: rgb(12, 16, 22);
+  --shiba-terminal-window: rgb(20, 24, 32);
+  --shiba-terminal-border: rgba(208, 109, 108, 0.2);
+  --shiba-terminal-prompt: rgb(208, 109, 108);
+  
+  /* Accent colors */
+  --shiba-accent: rgb(208, 109, 108);
+  --shiba-accent-hover: rgb(225, 125, 124);
+  --shiba-accent-muted: rgba(208, 109, 108, 0.3);
+  
+  /* Glassmorphism effects */
+  --shiba-glass-bg: rgba(32, 36, 44, 0.7);
+  --shiba-glass-border: rgba(208, 109, 108, 0.15);
+}
+
+/* Base styles with Shiba theme */
+body {
+  background: var(--shiba-bg-primary);
+  color: var(--shiba-text-primary);
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Consolas", monospace;
+  line-height: 1.6;
+}
+
+/* Shiba-themed scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--shiba-bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--shiba-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--shiba-accent-hover);
+}
+
+/* Custom Shiba utility classes */
+.shiba-terminal {
+  background: var(--shiba-terminal-bg);
+  border: 1px solid var(--shiba-terminal-border);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(208, 109, 108, 0.1);
+}
+
+.shiba-window {
+  background: var(--shiba-terminal-window);
+  border: 1px solid var(--shiba-glass-border);
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.shiba-card {
+  background: var(--shiba-bg-card);
+  border: 1px solid var(--shiba-glass-border);
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.shiba-card:hover {
+  background: rgba(32, 36, 44, 0.95);
+  border-color: var(--shiba-accent-muted);
+  box-shadow: 0 4px 16px rgba(208, 109, 108, 0.15);
+}
+
+.shiba-glass {
+  background: var(--shiba-glass-bg);
+  border: 1px solid var(--shiba-glass-border);
+  backdrop-filter: blur(12px);
+  border-radius: 8px;
+}
+
+.shiba-glow {
+  box-shadow: 0 0 20px rgba(208, 109, 108, 0.3);
+}
+
+.shiba-text-accent {
+  color: var(--shiba-accent);
+}
+
+.shiba-text-secondary {
+  color: var(--shiba-text-secondary);
+}
+
+.shiba-text-muted {
+  color: var(--shiba-text-muted);
+}
+
+.shiba-bg-accent {
+  background-color: var(--shiba-accent);
+}
+
+.shiba-border-accent {
+  border-color: var(--shiba-accent);
+}
+
+/* Shiba-themed button styles */
+.shiba-btn-primary {
+  background: var(--shiba-accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.shiba-btn-primary:hover {
+  background: var(--shiba-accent-hover);
+  transform: translateY(-1px);
+}
+
+.shiba-btn-secondary {
+  background: var(--shiba-accent-muted);
+  color: var(--shiba-accent);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid var(--shiba-accent);
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.shiba-btn-secondary:hover {
+  background: rgba(208, 109, 108, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Soft animations */
+.shiba-fade-in {
+  animation: shibaFadeIn 0.5s ease-out;
+}
+
+@keyframes shibaFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Shiba-themed selection */
+::selection {
+  background: var(--shiba-accent-muted);
+  color: var(--shiba-text-primary);
+}

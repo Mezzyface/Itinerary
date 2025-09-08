@@ -2,32 +2,32 @@ import { useState } from 'react'
 
 const TripOverview = ({ tripData, onDaySelect }) => {
   return (
-    <div className="bg-gray-900 text-green-400 font-mono min-h-screen">
+    <div className="min-h-screen shiba-fade-in" style={{background: 'var(--shiba-bg-primary)', color: 'var(--shiba-text-primary)'}}>
       <div className="container mx-auto px-4 py-6">
-        {/* Terminal Header */}
-        <div className="bg-gray-800 rounded-t-lg p-2 mb-0">
+        {/* Shiba Terminal Header */}
+        <div className="shiba-window rounded-t-lg p-3 mb-0">
           <div className="flex items-center space-x-2">
             <div className="flex space-x-2">
-              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-red-400 rounded-full shadow-sm"></div>
+              <div className="w-3 h-3 bg-yellow-400 rounded-full shadow-sm"></div>
+              <div className="w-3 h-3 bg-green-400 rounded-full shadow-sm"></div>
             </div>
-            <div className="text-gray-400 text-sm ml-4">trip-itinerary@user:~</div>
+            <div className="shiba-text-muted text-sm ml-4 font-mono">trip-itinerary@shiba:~</div>
           </div>
         </div>
 
-        {/* Terminal Content */}
-        <div className="bg-black rounded-b-lg p-6">
+        {/* Shiba Terminal Content */}
+        <div className="shiba-terminal rounded-b-lg p-6">
           {/* Trip Header */}
           <div className="mb-8">
-            <div className="text-green-300 mb-2">
-              <span className="text-gray-500">$</span> cat trip_info.txt
+            <div className="shiba-text-accent mb-2">
+              <span className="shiba-text-muted">$</span> cat trip_info.txt
             </div>
-            <div className="border-l-2 border-green-600 pl-4">
-              <h1 className="text-2xl font-bold text-white mb-2">
+            <div className="border-l-2 shiba-border-accent pl-4">
+              <h1 className="text-2xl font-bold shiba-text-primary mb-2">
                 🌍 {tripData.tripInfo?.title || 'Trip Itinerary'}
               </h1>
-              <div className="text-green-300 space-y-1">
+              <div className="shiba-text-accent space-y-1">
                 <div>📅 {tripData.tripInfo?.startDate} → {tripData.tripInfo?.endDate}</div>
                 <div>👥 Travelers: {tripData.tripInfo?.travelers?.join(', ')}</div>
                 <div>📍 {tripData.days?.length || 0} days planned</div>
@@ -37,60 +37,60 @@ const TripOverview = ({ tripData, onDaySelect }) => {
 
           {/* Days Overview */}
           <div className="mb-6">
-            <div className="text-green-300 mb-4">
-              <span className="text-gray-500">$</span> ls days/
+            <div className="shiba-text-accent mb-4">
+              <span className="shiba-text-muted">$</span> ls days/
             </div>
             <div className="grid gap-4">
               {tripData.days?.map((day, index) => (
                 <div
                   key={day.id}
-                  className="border border-green-600/30 rounded p-4 hover:border-green-400/50 transition-colors cursor-pointer group"
+                  className="shiba-card p-4 cursor-pointer group transition-all hover:shiba-glow"
                   onClick={() => onDaySelect(day.id)}
                 >
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
                       <div className="flex items-center space-x-3 mb-2">
-                        <span className="text-green-400 font-bold">
+                        <span className="shiba-text-accent font-bold">
                           day_{index + 1}.md
                         </span>
-                        <span className="text-gray-400 text-sm">
+                        <span className="shiba-text-muted text-sm">
                           {day.date}
                         </span>
                         {day.weather && (
-                          <span className="text-gray-300">
+                          <span className="shiba-text-secondary">
                             {day.weather.icon} {day.weather.temp}
                           </span>
                         )}
                       </div>
                       
-                      <div className="text-white font-semibold mb-1">
+                      <div className="shiba-text-primary font-semibold mb-1">
                         📍 {day.city}, {day.country}
                       </div>
                       
-                      <div className="text-gray-300 text-sm mb-3">
+                      <div className="shiba-text-secondary text-sm mb-3">
                         {day.overview}
                       </div>
 
                       {/* Quick Stats */}
                       <div className="flex flex-wrap gap-4 text-xs">
-                        <span className="text-yellow-400">
+                        <span style={{color: 'var(--shiba-yellow)'}}>
                           ⚡ {day.mandatoryActivities?.length || 0} mandatory
                         </span>
-                        <span className="text-blue-400">
+                        <span style={{color: 'var(--shiba-blue)'}}>
                           🎯 {day.timeBlocks?.length || 0} time blocks
                         </span>
-                        <span className="text-pink-400">
+                        <span className="shiba-text-accent">
                           📷 {day.photoSpots?.length || 0} photo spots
                         </span>
                         {day.transportation?.length > 0 && (
-                          <span className="text-purple-400">
+                          <span style={{color: 'var(--shiba-green)'}}>
                             🚗 transport
                           </span>
                         )}
                       </div>
                     </div>
 
-                    <div className="text-green-400 group-hover:text-green-300">
+                    <div className="shiba-text-accent group-hover:scale-110 transition-transform">
                       →
                     </div>
                   </div>
@@ -100,10 +100,10 @@ const TripOverview = ({ tripData, onDaySelect }) => {
           </div>
 
           {/* Footer Commands */}
-          <div className="border-t border-green-600/30 pt-4 text-sm text-gray-400">
+          <div className="border-t shiba-glass-border pt-4 text-sm shiba-text-muted">
             <div className="space-y-1">
-              <div><span className="text-green-400">tip:</span> Click any day to view detailed itinerary</div>
-              <div><span className="text-yellow-400">help:</span> Use terminal navigation for hacker-friendly travel planning 🤖</div>
+              <div><span className="shiba-text-accent">tip:</span> Click any day to view detailed itinerary</div>
+              <div><span style={{color: 'var(--shiba-yellow)'}}>help:</span> Terminal navigation for serene travel planning 🐕✨</div>
             </div>
           </div>
         </div>

@@ -20,47 +20,47 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
   }
 
   return (
-    <div className="bg-gray-900 text-green-400 font-mono min-h-screen">
+    <div className="min-h-screen shiba-fade-in" style={{background: 'var(--shiba-bg-primary)', color: 'var(--shiba-text-primary)'}}>
       <div className="container mx-auto px-4 py-6">
-        {/* Terminal Header */}
-        <div className="bg-gray-800 rounded-t-lg p-2 mb-0">
+        {/* Shiba Terminal Header */}
+        <div className="shiba-window rounded-t-lg p-3 mb-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
               <div className="flex space-x-2">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+                <div className="w-3 h-3 bg-red-400 rounded-full shadow-sm"></div>
+                <div className="w-3 h-3 bg-yellow-400 rounded-full shadow-sm"></div>
+                <div className="w-3 h-3 bg-green-400 rounded-full shadow-sm"></div>
               </div>
-              <div className="text-gray-400 text-sm ml-4">day-detail@user:~</div>
+              <div className="shiba-text-muted text-sm ml-4 font-mono">day-detail@shiba:~</div>
             </div>
             <button
               onClick={onBackToOverview}
-              className="text-green-400 hover:text-green-300 text-sm px-3 py-1 border border-green-600/30 rounded"
+              className="shiba-btn-secondary text-sm"
             >
               ← back
             </button>
           </div>
         </div>
 
-        {/* Terminal Content */}
-        <div className="bg-black rounded-b-lg p-6">
+        {/* Shiba Terminal Content */}
+        <div className="shiba-terminal rounded-b-lg p-6">
           {/* Day Header */}
           <div className="mb-8">
-            <div className="text-green-300 mb-2">
-              <span className="text-gray-500">$</span> cat day_{dayData.id}.md
+            <div className="shiba-text-accent mb-2">
+              <span className="shiba-text-muted">$</span> cat day_{dayData.id}.md
             </div>
-            <div className="border-l-2 border-green-600 pl-4">
-              <h1 className="text-2xl font-bold text-white mb-2">
+            <div className="border-l-2 shiba-border-accent pl-4">
+              <h1 className="text-2xl font-bold shiba-text-primary mb-2">
                 📅 {dayData.title}
               </h1>
-              <div className="text-green-300 space-y-1 mb-4">
+              <div className="shiba-text-accent space-y-1 mb-4">
                 <div>📍 {dayData.city}, {dayData.country}</div>
                 <div>🗓️ {dayData.date}</div>
                 {dayData.weather && (
                   <div>{dayData.weather.icon} {dayData.weather.temp} - {dayData.weather.condition}</div>
                 )}
               </div>
-              <div className="text-gray-300">{dayData.overview}</div>
+              <div className="shiba-text-secondary">{dayData.overview}</div>
             </div>
           </div>
 
