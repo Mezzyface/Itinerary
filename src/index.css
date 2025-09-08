@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Shiba Inu Theme - Comfortable and serene Japanese-inspired aesthetic */
+/* Shiba Inu Theme - OLED-optimized with Japanese-inspired aesthetics */
 :root {
   /* Core Shiba Inu color palette */
   --shiba-lily: rgb(208, 109, 108);
@@ -11,31 +11,42 @@
   --shiba-green: rgb(63, 130, 48);
   --shiba-yellow: rgb(228, 147, 32);
   
-  /* Dark theme backgrounds */
-  --shiba-bg-primary: rgb(16, 20, 28);
-  --shiba-bg-secondary: rgb(24, 28, 36);
-  --shiba-bg-tertiary: rgb(32, 36, 44);
-  --shiba-bg-card: rgba(32, 36, 44, 0.8);
+  /* OLED-optimized backgrounds - True blacks for battery saving */
+  --shiba-bg-primary: rgb(0, 0, 0);
+  --shiba-bg-secondary: rgb(8, 8, 8);
+  --shiba-bg-tertiary: rgb(16, 16, 16);
+  --shiba-bg-card: rgba(16, 16, 16, 0.9);
   
-  /* Text colors */
-  --shiba-text-primary: rgb(220, 215, 211);
-  --shiba-text-secondary: rgb(176, 170, 165);
-  --shiba-text-muted: rgb(132, 126, 121);
+  /* OLED-friendly text colors - High contrast */
+  --shiba-text-primary: rgb(240, 235, 231);
+  --shiba-text-secondary: rgb(200, 194, 189);
+  --shiba-text-muted: rgb(160, 154, 149);
   
-  /* Terminal colors */
-  --shiba-terminal-bg: rgb(12, 16, 22);
-  --shiba-terminal-window: rgb(20, 24, 32);
-  --shiba-terminal-border: rgba(208, 109, 108, 0.2);
+  /* OLED Terminal colors - Pure black backgrounds */
+  --shiba-terminal-bg: rgb(0, 0, 0);
+  --shiba-terminal-window: rgb(8, 8, 8);
+  --shiba-terminal-border: rgba(208, 109, 108, 0.25);
   --shiba-terminal-prompt: rgb(208, 109, 108);
   
-  /* Accent colors */
-  --shiba-accent: rgb(208, 109, 108);
-  --shiba-accent-hover: rgb(225, 125, 124);
-  --shiba-accent-muted: rgba(208, 109, 108, 0.3);
+  /* Enhanced accent colors for OLED contrast */
+  --shiba-accent: rgb(220, 120, 119);
+  --shiba-accent-hover: rgb(235, 135, 134);
+  --shiba-accent-muted: rgba(220, 120, 119, 0.4);
   
-  /* Glassmorphism effects */
-  --shiba-glass-bg: rgba(32, 36, 44, 0.7);
-  --shiba-glass-border: rgba(208, 109, 108, 0.15);
+  /* OLED Glassmorphism - Minimal transparency to maintain blacks */
+  --shiba-glass-bg: rgba(16, 16, 16, 0.95);
+  --shiba-glass-border: rgba(208, 109, 108, 0.2);
+}
+
+/* OLED Media Query - Enhanced blacks for OLED displays */
+@media (prefers-contrast: high), (display-mode: fullscreen) {
+  :root {
+    --shiba-bg-primary: rgb(0, 0, 0);
+    --shiba-terminal-bg: rgb(0, 0, 0);
+    --shiba-glass-bg: rgba(0, 0, 0, 0.98);
+    --shiba-text-primary: rgb(255, 255, 255);
+    --shiba-accent: rgb(230, 130, 129);
+  }
 }
 
 /* Base styles with Shiba theme */
@@ -171,8 +182,107 @@ body {
   }
 }
 
-/* Shiba-themed selection */
+/* OLED-optimized utility classes */
+.shiba-oled-pure {
+  background: rgb(0, 0, 0) !important;
+}
+
+.shiba-oled-surface {
+  background: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(208, 109, 108, 0.15);
+}
+
+.shiba-oled-text {
+  color: rgb(255, 255, 255);
+}
+
+.shiba-oled-accent {
+  color: rgb(230, 130, 129);
+}
+
+/* Power-saving mode for OLED */
+@media (prefers-reduced-motion: reduce) {
+  .shiba-card,
+  .shiba-btn-primary,
+  .shiba-btn-secondary,
+  .shiba-fade-in {
+    transition: none !important;
+    animation: none !important;
+  }
+  
+  .shiba-glow {
+    box-shadow: none !important;
+  }
+}
+
+/* High contrast mode for accessibility */
+@media (prefers-contrast: high) {
+  .shiba-text-secondary {
+    color: rgb(220, 220, 220);
+  }
+  
+  .shiba-text-muted {
+    color: rgb(180, 180, 180);
+  }
+  
+  .shiba-card {
+    border-color: var(--shiba-accent);
+  }
+}
+
+/* Dark theme preference detection */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+  }
+}
+
+/* OLED-friendly scrollbar with minimal glow */
+::-webkit-scrollbar-thumb {
+  background: var(--shiba-accent);
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--shiba-accent-hover);
+  box-shadow: 0 0 3px rgba(220, 120, 119, 0.3);
+}
+
+/* Reduced transparency for better OLED power efficiency */
+.shiba-terminal.oled-optimized {
+  background: rgb(0, 0, 0);
+  backdrop-filter: none;
+}
+
+.shiba-card.oled-optimized {
+  background: rgba(8, 8, 8, 0.98);
+  backdrop-filter: blur(2px);
+}
+
+.shiba-window.oled-optimized {
+  background: rgb(4, 4, 4);
+  backdrop-filter: none;
+}
+
+/* Shiba-themed selection with OLED optimization */
 ::selection {
   background: var(--shiba-accent-muted);
   color: var(--shiba-text-primary);
+}
+
+/* OLED status indicators */
+.shiba-status-success {
+  color: rgb(80, 200, 120);
+  background: rgba(80, 200, 120, 0.1);
+}
+
+.shiba-status-warning {
+  color: rgb(255, 180, 0);
+  background: rgba(255, 180, 0, 0.1);
+}
+
+.shiba-status-error {
+  color: rgb(255, 100, 100);
+  background: rgba(255, 100, 100, 0.1);
 }
