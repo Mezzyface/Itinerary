@@ -35,7 +35,7 @@ jobs:
 
     - name: Build application
       run: npm run build
-      env:
+      # env:
         # Add environment variables for API keys if needed
         # VITE_OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
         # VITE_GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
