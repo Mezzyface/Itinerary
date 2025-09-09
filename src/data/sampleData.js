@@ -42,7 +42,29 @@ export const sampleTripData = {
           confirmationCode: "HMRDDYA2N4"
         }
       ],
-      timeBlocks: [],
+      timeBlocks: [
+        {
+          id: "afternoon-optional",
+          timeRange: "16:30 - 17:00",
+          title: "🏛️ Optional Stop",
+          options: [
+            {
+              title: "⛩️ Ebisu Shrine Visit",
+              duration: "30 minutes",
+              cost: "¥0",
+              photoSpots: ["Shrine grounds", "Goshuin ceremony", "Traditional architecture"],
+              coordinates: { lat: 35.6464, lng: 139.7103 },
+              description: "Visit Ebisu Shrine to purchase Goshuincho and receive first goshuin",
+              links: [
+                { name: "Ebisu Shrine", url: "https://maps.app.goo.gl/6bjWpLGNd6te9iqE8" },
+                { name: "Shrine Store", url: "https://maps.app.goo.gl/GsJNyLmWwg3JBntX9" },
+                { name: "Shrine Site", url: "https://jinjamemo.com/archives/ebisujinja.html" }
+              ],
+              notes: "Optional stop if able to make it before 5pm"
+            }
+          ]
+        }
+      ],
       transportation: [],
       photoSpots: []
     },
