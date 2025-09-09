@@ -301,6 +301,28 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
                       {transport.confirmationCode && (
                         <div>🔐 <span className="text-cyan-400">{transport.confirmationCode}</span></div>
                       )}
+                      {transport.notes && <div>📝 {transport.notes}</div>}
+                      {transport.links && transport.links.length > 0 && (
+                        <div className="mt-2 pt-2 border-t border-cyan-500/20">
+                          <div className="text-shiba-accent text-xs mb-1">🔗 Links:</div>
+                          <div className="space-y-1">
+                            {transport.links.map((link, linkIndex) => (
+                              <div key={linkIndex} className="font-mono text-xs">
+                                <span className="text-gray-500">$ </span>
+                                <span className="text-blue-400">curl </span>
+                                <a 
+                                  href={link.url} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-shiba-accent hover:text-shiba-accent-hover underline transition-colors"
+                                >
+                                  {link.name}
+                                </a>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}
