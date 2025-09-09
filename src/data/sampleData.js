@@ -6,8 +6,8 @@ import { day3Data } from './day3Data.js';
 export const sampleTripData = {
   tripInfo: {
     title: "Tokyo Shibuya Experience → Mount Fuji Adventure",
-    startDate: "2024-11-26",
-    endDate: "2024-11-29", 
+    startDate: "2025-11-26",
+    endDate: "2025-11-29", 
     travelers: ["User"],
     coverImage: "/images/tokyo-cover.jpg",
     budget: {

@@ -1,9 +1,9 @@
 // Day 1 Data - Tokyo Shibuya Stay
-// Tuesday, November 26, 2024
+// Tuesday, November 26, 2025
 
 export const day1Data = {
   id: "day-1",
-  date: "2024-11-26",
+  date: "2025-11-26",
   title: "Tokyo Shibuya Stay",
   city: "Shibuya City",
   country: "Japan", 

@@ -3,7 +3,7 @@
 
 export const day2Data = {
   id: "day-2",
-  date: "2024-11-27",
+  date: "2025-11-27",
   title: "Tokyo Shrines → Mount Fuji",
   city: "Tokyo → Kawaguchiko",
   country: "Japan", 

@@ -3,7 +3,7 @@
 
 export const day3Data = {
   id: "day-3",
-  date: "2024-11-28",
+  date: "2025-11-28",
   title: "Mount Fuji Views Adventure",
   city: "Kawaguchiko",
   country: "Japan", 
