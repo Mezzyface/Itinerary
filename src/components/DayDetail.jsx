@@ -213,6 +213,19 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
                                 {option.photoSpots && (
                                   <div>📷 Photo spots: {option.photoSpots.join(', ')}</div>
                                 )}
+                                {option.breakdown && (
+                                  <div className="mt-2 pt-2 border-t border-gray-600/20">
+                                    <div className="text-shiba-accent text-xs mb-1">💴 Cost Breakdown:</div>
+                                    <div className="space-y-1">
+                                      {Object.entries(option.breakdown).map(([item, cost], index) => (
+                                        <div key={index} className="text-xs">
+                                          <span className="text-gray-400">• {item}:</span>
+                                          <span className="text-yellow-400 ml-2 font-mono">{cost}</span>
+                                        </div>
+                                      ))}
+                                    </div>
+                                  </div>
+                                )}
                                 {option.links && option.links.length > 0 && (
                                   <div className="mt-2 pt-2 border-t border-gray-600/20">
                                     <div className="text-shiba-accent text-xs mb-1">🔗 Links:</div>

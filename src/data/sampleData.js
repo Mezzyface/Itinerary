@@ -7,10 +7,10 @@ export const sampleTripData = {
     travelers: ["User"],
     coverImage: "/images/tokyo-cover.jpg",
     budget: {
-      totalBudget: "$200.00",
-      currency: "USD",
-      spent: "$106.02",
-      remaining: "$93.98"
+      totalBudget: "¥30,000",
+      currency: "JPY",
+      spent: "¥15,900",
+      remaining: "¥14,100"
     }
   },
   days: [
@@ -58,7 +58,7 @@ export const sampleTripData = {
             {
               title: "⛩️ Ebisu Shrine Visit",
               duration: "30 minutes",
-              cost: "¥0",
+              cost: "¥3,000",
               photoSpots: ["Shrine grounds", "Goshuin ceremony", "Traditional architecture"],
               coordinates: { lat: 35.6464, lng: 139.7103 },
               description: "Visit Ebisu Shrine to purchase Goshuincho and receive first goshuin",
@@ -67,7 +67,11 @@ export const sampleTripData = {
                 { name: "Shrine Store", url: "https://maps.app.goo.gl/GsJNyLmWwg3JBntX9" },
                 { name: "Shrine Site", url: "https://jinjamemo.com/archives/ebisujinja.html" }
               ],
-              notes: "Optional stop if able to make it before 5pm"
+              notes: "Optional stop if able to make it before 5pm",
+              breakdown: {
+                "Goshuincho (stamp book)": "¥2,500",
+                "First Goshuin (stamp)": "¥500"
+              }
             }
           ]
         }
@@ -75,13 +79,13 @@ export const sampleTripData = {
       transportation: [],
       photoSpots: [],
       budget: {
-        dailyBudget: "$100.00",
-        spent: "$106.02",
+        dailyBudget: "¥15,000",
+        spent: "¥15,900",
         breakdown: {
-          accommodation: "$106.02",
-          activities: "$0.00",
-          food: "$0.00",
-          transport: "$0.00"
+          accommodation: "¥15,900",
+          activities: "¥0.00",
+          food: "¥0.00",
+          transport: "¥0.00"
         }
       }
     },
@@ -120,13 +124,13 @@ export const sampleTripData = {
       transportation: [],
       photoSpots: [],
       budget: {
-        dailyBudget: "$100.00",
-        spent: "$0.00",
+        dailyBudget: "¥15,000",
+        spent: "¥0.00",
         breakdown: {
-          accommodation: "$0.00",
-          activities: "$0.00",
-          food: "$0.00",
-          transport: "$0.00"
+          accommodation: "¥0.00",
+          activities: "¥0.00",
+          food: "¥0.00",
+          transport: "¥0.00"
         }
       }
     }
