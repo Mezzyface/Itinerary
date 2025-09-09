@@ -8,14 +8,14 @@ export const day3Data = {
   city: "Kawaguchiko",
   country: "Japan", 
   coordinates: { lat: 35.5077, lng: 138.7592 },
-  overview: "🗻 Fuji Views Adventure! Iconic Chureito Pagoda at sunrise, shrine hopping for goshuin collection, and stunning lakeside views. The perfect day to capture Mount Fuji's majesty from multiple angles.",
+  overview: "🗻 Flexible Fuji Views Day! A relaxed day at Mount Fuji with optional photography at Chureito Pagoda, traditional Hoto lunch, lakeside shrine exploration, and maple festival. All activities are optional - perfect for a leisurely exploration day.",
   dayPlan: [
-    "06:00 - Early morning departure to Chureito Pagoda",
-    "07:00 - Sunrise photography at pagoda with Mount Fuji",
-    "10:00 - Shrine hopping for goshuin collection",
-    "13:00 - Lakeside lunch with mountain views",
-    "15:00 - Kawaguchi Lake exploration and boat ride",
-    "18:00 - Traditional dinner at ryokan"
+    "08:00 - Optional Chureito Pagoda photography",
+    "12:00 - Optional traditional Hoto lunch",
+    "14:00 - Optional lakeside shrine exploration", 
+    "16:00 - Flexible time for lake activities or rest",
+    "17:00 - Optional maple festival exploration",
+    "Evening - Traditional dinner and Mount Fuji views"
   ],
   weather: {
     temp: "8-15°C (46-59°F)",
@@ -36,34 +36,7 @@ export const day3Data = {
       { name: "Navigate to Aoiso", url: "https://maps.app.goo.gl/MCXdJWUuhSKBgMzF9" }
     ]
   },
-  mandatoryActivities: [
-    {
-      id: "chureito-pagoda-climb",
-      time: "08:00",
-      title: "🗻 Chureito Pagoda Climb",
-      duration: "2 hours",
-      location: "Arakurayama Sengen Park",
-      status: "upcoming",
-      notes: "Climb ~400 steps to iconic Mount Fuji viewpoint - BEST PHOTO SPOT! Clear morning visibility essential.",
-      links: [
-        { name: "Navigate to Pagoda", url: "https://maps.app.goo.gl/esXdopYW12tvZMof7" },
-        { name: "Train Route", url: "https://japantravel.navitime.com/en/area/jp/route/result/?start=00001065&goal=00000916&start_name=Kawaguchiko&goal_name=Shimoyoshida&cid=&from=route_top_search_box&ferry=false&taxi=false" }
-      ]
-    },
-    {
-      id: "hoto-lunch",
-      time: "12:00",
-      title: "🍜 Specialty Hoto Lunch",
-      duration: "1 hour",
-      location: "Hoto Fudo Kawaguchiko Ekimae",
-      status: "upcoming",
-      notes: "Famous local hoto noodle specialty at authentic restaurant near station",
-      links: [
-        { name: "Restaurant Site", url: "http://www.houtou-fudou.jp/english.html" },
-        { name: "Navigate to Restaurant", url: "https://maps.app.goo.gl/aLqEds7YVHaAGvom9" }
-      ]
-    }
-  ],
+  mandatoryActivities: [],
   timeBlocks: [
     {
       id: "morning-fuji-views",
@@ -100,6 +73,27 @@ export const day3Data = {
             "Goshuin": "¥300"
           },
           notes: "Historic Fujisengen shrine, goshuin collection available"
+        }
+      ]
+    },
+    {
+      id: "lunch-break",
+      timeRange: "12:00 - 13:30",
+      title: "🍜 Traditional Lunch",
+      options: [
+        {
+          title: "🍜 Specialty Hoto Lunch",
+          duration: "1 hour",
+          cost: "¥1,200-2,000",
+          photoSpots: ["Traditional hoto noodles", "Local restaurant atmosphere", "Mount Fuji region cuisine"],
+          coordinates: { lat: 35.5077, lng: 138.7592 },
+          description: "Famous local hoto noodle specialty at authentic restaurant near station",
+          hours: "12:00-13:00",
+          links: [
+            { name: "Restaurant Site", url: "http://www.houtou-fudou.jp/english.html" },
+            { name: "Navigate to Restaurant", url: "https://maps.app.goo.gl/aLqEds7YVHaAGvom9" }
+          ],
+          notes: "Traditional thick wheat noodles in miso broth with vegetables - Yamanashi specialty"
         }
       ]
     },

@@ -10,9 +10,9 @@ export const day4Data = {
   coordinates: { lat: 35.5135, lng: 138.7661 },
   overview: "🏕️ Camping adventure near Mount Fuji! Outdoor experience with tent site accommodation, surrounded by nature and mountain views. Perfect way to connect with Japan's natural beauty.",
   dayPlan: [
-    "10:00 - Check out of ryokan and pack for camping",
-    "12:00 - Travel to Fujikawa Camp site",
-    "15:00 - Set up tent and camp site",
+    "11:30 - Pick up camping supplies near campsite",
+    "15:00 - Check-in and pick up rental equipment",
+    "15:30 - Set up tent and camp site",
     "17:00 - Nature hiking and Mount Fuji photography",
     "19:00 - Camping dinner and stargazing",
     "21:00 - Campfire and traditional outdoor experience"
@@ -43,39 +43,30 @@ export const day4Data = {
   },
   mandatoryActivities: [
     {
-      id: "ryokan-checkout",
-      time: "09:00",
-      title: "🎒 Check out of Aoiso Ryokan",
-      duration: "30 minutes",
-      location: "Aoiso Ryokan",
-      status: "upcoming",
-      notes: "Final checkout from traditional ryokan, prepare for camping adventure",
-      confirmationCode: "HMKCYQKHZZ"
-    },
-    {
       id: "camping-supplies",
       time: "11:30",
       title: "🛒 Supply Shopping for Camping",
       duration: "1.5 hours",
-      location: "Kawaguchiko Shopping Area",
+      location: "Near Fujikawa Camp area",
       status: "upcoming",
-      notes: "Gather food, drinks, and any camping essentials. Check if camping equipment rental needed.",
+      notes: "Pick up food, drinks, and camping essentials from shops near the campsite.",
       links: [
-        { name: "Shopping Area", url: "https://maps.app.goo.gl/kawaguchiko-shopping" }
+        { name: "Stores near Fujikawa Station", url: "https://www.google.com/maps/search/stores+near+Fujikawa+Station,+Yamanashi,+Japan/@35.5135,138.7661,15z" }
       ]
     },
     {
       id: "campsite-checkin",
       time: "15:00",
-      title: "🏕️ Fujikawa Camp Check-in & Setup",
+      title: "🏕️ Fujikawa Camp Check-in & Equipment Pickup",
       duration: "2 hours",
       location: "Fujikawa Camp",
       status: "upcoming",
-      notes: "Check-in to tent site (7.5m×7.5m), set up tent and explore Fujikawa camping grounds",
+      notes: "Check-in to tent site (7.5m×7.5m), pick up camping equipment rental from reception, set up tent and explore camping grounds",
       confirmationCode: "TENT112925",
       links: [
         { name: "Fujikawa Camp Site", url: "https://fujikawa-camp.jp/" },
-        { name: "Campsite Location", url: "https://maps.app.goo.gl/fujikawa-camp-location" }
+        { name: "Campsite Location", url: "https://maps.app.goo.gl/fujikawa-camp-location" },
+        { name: "Equipment Rental", url: "https://hinata-rental.me/" }
       ]
     }
   ],
