@@ -40,16 +40,6 @@ export const sampleTripData = {
           status: "upcoming",
           notes: "Self check-in with lockbox, 4 min walk from Ebisu Station",
           confirmationCode: "HMRDDYA2N4"
-        },
-        {
-          id: "airbnb-checkout", 
-          time: "10:00",
-          title: "🎒 Checkout & Departure (Nov 27)",
-          duration: "30 minutes", 
-          location: "HJ SHIBUYA b01",
-          status: "upcoming",
-          notes: "Checkout by 10:00 AM on November 27th, leave keys in lockbox",
-          confirmationCode: "HMRDDYA2N4"
         }
       ],
       timeBlocks: [
@@ -133,6 +123,41 @@ export const sampleTripData = {
           description: "Authentic local restaurants and street food"
         }
       ]
+    },
+    {
+      id: "day-2",
+      date: "2024-11-27",
+      title: "Departure Day",
+      city: "Shibuya City",
+      country: "Japan", 
+      coordinates: { lat: 35.6585, lng: 139.7016 },
+      overview: "Final morning in Tokyo before departure.",
+      weather: {
+        temp: "14°C",
+        condition: "Partly Cloudy", 
+        icon: "⛅"
+      },
+      accommodations: {
+        name: "恵比寿駅から徒歩4分/渋谷駅まで徒歩圏内/家具家電付/HJ SHIBUYA b01",
+        address: "3-chōme-20-10 Higashi, Shibuya City, Tokyo Prefecture 150-0011, Japan",
+        checkOut: "10:00",
+        confirmationCode: "HMRDDYA2N4"
+      },
+      mandatoryActivities: [
+        {
+          id: "airbnb-checkout", 
+          time: "10:00",
+          title: "🎒 Checkout & Departure",
+          duration: "30 minutes", 
+          location: "HJ SHIBUYA b01",
+          status: "upcoming",
+          notes: "Checkout by 10:00 AM, leave keys in lockbox",
+          confirmationCode: "HMRDDYA2N4"
+        }
+      ],
+      timeBlocks: [],
+      transportation: [],
+      photoSpots: []
     }
   ],
   integrations: {
