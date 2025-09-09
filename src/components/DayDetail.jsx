@@ -204,6 +204,9 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
                               <div className="text-gray-300 text-sm space-y-1">
                                 <div>⏱️ Duration: {option.duration}</div>
                                 <div>💰 Cost: {option.cost}</div>
+                                {option.hours && (
+                                  <div>🕐 Hours: {option.hours}</div>
+                                )}
                                 {option.description && (
                                   <div>📝 {option.description}</div>
                                 )}
