@@ -187,8 +187,8 @@ export const day4Data = {
       cost: "¥500-1,000",
       notes: "Transport to Fujikawa Camp with camping supplies and equipment",
       links: [
-        { name: "Fujikawa Camp Route", url: "https://fujikawa-camp.jp/" },
-        { name: "Campsite Location", url: "https://maps.app.goo.gl/fujikawa-camp-location" }
+        { name: "Ryokan to Campsite Route", url: "https://japantravel.navitime.com/en/area/jp/route/result/?start=00001065&goal=00007890&start_name=Kawaguchiko&goal_name=Fujikawa&cid=&from=route_top_search_box&date_time=2025-11-29T11%3A00&ferry=false&taxi=false" },
+        { name: "Fujikawa Camp Site", url: "https://fujikawa-camp.jp/" }
       ]
     }
   ],
