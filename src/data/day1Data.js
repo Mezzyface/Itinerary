@@ -27,9 +27,12 @@ export const day1Data = {
     checkIn: "16:00",
     checkOut: "10:00",
     confirmationCode: "HMRDDYA2N4",
-    host: "ライワマンション",
+    host: "ライワマンション", 
     notes: "Self check-in with lockbox, 4 min walk from Ebisu Station",
-    totalCost: "$106.02"
+    totalCost: "$106.02",
+    links: [
+      { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMRDDYA2N4" }
+    ]
   },
   mandatoryActivities: [
     {

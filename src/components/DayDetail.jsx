@@ -71,17 +71,30 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
                 <span className="text-gray-500">$</span> cat accommodation.json
               </div>
               <div className="border border-blue-500/30 rounded p-4 bg-blue-500/5">
-                <h3 className="text-blue-400 font-bold mb-2">🏨 {dayData.accommodations.name}</h3>
-                <div className="text-gray-300 text-sm space-y-1">
-                  <div>📍 {dayData.accommodations.address}</div>
+                <h3 className="text-blue-400 font-bold mb-2">🏨 Accommodation</h3>
+                <div className="text-gray-300 text-sm space-y-2">
                   {dayData.accommodations.checkIn && (
                     <div>⏰ Check-in: {dayData.accommodations.checkIn}</div>
                   )}
                   {dayData.accommodations.checkOut && (
                     <div>⏰ Check-out: {dayData.accommodations.checkOut}</div>
                   )}
-                  {dayData.accommodations.confirmationCode && (
-                    <div>🔐 Confirmation: <span className="text-blue-400">{dayData.accommodations.confirmationCode}</span></div>
+                  <div>📍 {dayData.city}, {dayData.country}</div>
+                  {dayData.accommodations.links && dayData.accommodations.links.length > 0 && (
+                    <div className="mt-2 pt-2 border-t border-blue-500/20">
+                      <div className="font-mono text-xs">
+                        <span className="text-gray-500">$ </span>
+                        <span className="text-blue-400">curl </span>
+                        <a 
+                          href={dayData.accommodations.links[0].url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-shiba-accent hover:text-shiba-accent-hover underline transition-colors"
+                        >
+                          {dayData.accommodations.links[0].name}
+                        </a>
+                      </div>
+                    </div>
                   )}
                 </div>
               </div>
@@ -141,54 +154,6 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
             </div>
           )}
 
-          {/* Daily Budget */}
-          {dayData.budget && (
-            <div className="mb-8">
-              <div className="text-green-300 mb-2">
-                <span className="text-gray-500">$</span> cat daily_budget.json
-              </div>
-              <div className="border border-green-500/30 rounded p-4 bg-green-500/5">
-                <h3 className="text-green-400 font-bold mb-3">💰 Day Budget</h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm mb-4">
-                  <div>
-                    <div className="text-gray-400">Daily Budget</div>
-                    <div className="text-green-400 font-bold">{dayData.budget.dailyBudget}</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-400">Spent Today</div>
-                    <div className="text-red-400 font-bold">{dayData.budget.spent}</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-400">Remaining</div>
-                    <div className="text-yellow-400 font-bold">
-                      ${(parseFloat(dayData.budget.dailyBudget.replace('$', '')) - parseFloat(dayData.budget.spent.replace('$', ''))).toFixed(2)}
-                    </div>
-                  </div>
-                </div>
-                <div className="border-t border-green-500/20 pt-3">
-                  <div className="text-gray-400 text-xs mb-2">Breakdown:</div>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
-                    <div>
-                      <span className="text-gray-500">🏨 Accommodation:</span>
-                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.accommodation}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">🎯 Activities:</span>
-                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.activities}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">🍜 Food:</span>
-                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.food}</span>
-                    </div>
-                    <div>
-                      <span className="text-gray-500">🚇 Transport:</span>
-                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.transport}</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
 
           {/* Time Blocks */}
           {dayData.timeBlocks && dayData.timeBlocks.length > 0 && (
@@ -330,22 +295,6 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
             </div>
           )}
 
-          {/* Photo Spots */}
-          {dayData.photoSpots && dayData.photoSpots.length > 0 && (
-            <div className="mb-8">
-              <div className="text-green-300 mb-2">
-                <span className="text-gray-500">$</span> ls photo_spots/
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {dayData.photoSpots.map((spot, index) => (
-                  <div key={index} className="border border-pink-500/30 rounded p-3 bg-pink-500/5">
-                    <h5 className="text-pink-400 font-semibold">{spot.name}</h5>
-                    <div className="text-gray-300 text-sm">{spot.description}</div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
 
           {/* Footer Commands */}
           <div className="border-t border-green-600/30 pt-4 text-sm text-gray-400">
