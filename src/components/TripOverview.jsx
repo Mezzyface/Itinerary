@@ -5,7 +5,7 @@ const TripOverview = ({ tripData, onDaySelect }) => {
   return (
     <div className="min-h-screen shiba-fade-in" style={{background: 'var(--shiba-bg-primary)', color: 'var(--shiba-text-primary)'}}>
       <div className="container mx-auto px-4 py-6">
-        {/* Shiba Terminal Header */}
+        {/* Dynamic Header */}
         <div className="shiba-window rounded-t-lg p-3 mb-0">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
@@ -14,128 +14,132 @@ const TripOverview = ({ tripData, onDaySelect }) => {
                 <div className="w-3 h-3 bg-yellow-400 rounded-full shadow-sm"></div>
                 <div className="w-3 h-3 bg-green-400 rounded-full shadow-sm"></div>
               </div>
-              <div className="shiba-text-muted text-sm ml-4 font-mono">trip-itinerary@shiba:~</div>
+              <div className="shiba-text-muted text-sm ml-4 shiba-terminal-title">
+                <span className="shiba-terminal-only font-mono">trip-itinerary@shiba:~</span>
+                <span className="shiba-organic-only">🌸 Japan Adventure Planning</span>
+              </div>
             </div>
             <ThemeToggle />
           </div>
         </div>
 
-        {/* Shiba Terminal Content */}
-        <div className="shiba-terminal rounded-b-lg p-6">
+        {/* Dynamic Content Container */}
+        <div className="shiba-content-container rounded-b-lg p-6">
           {/* Trip Header */}
           <div className="mb-8">
-            <div className="shiba-text-accent mb-2">
-              <span className="shiba-text-muted">$</span> cat trip_info.txt
+            <div className="shiba-text-accent mb-2 shiba-section-header">
+              <span className="shiba-terminal-only">
+                <span className="shiba-text-muted">$</span> cat trip_info.txt
+              </span>
+              <span className="shiba-organic-only">
+                ✈️ Trip Overview
+              </span>
             </div>
-            <div className="border-l-2 shiba-border-accent pl-4">
+            <div className="border-l-2 shiba-border-accent pl-4 shiba-translucent-light rounded-r-lg py-2">
               <h1 className="text-2xl font-bold shiba-text-primary mb-2">
-                🌍 {tripData.tripInfo?.title || 'Trip Itinerary'}
+                <span className="shiba-terminal-only">🌍 {tripData.tripInfo?.title || 'Trip Itinerary'}</span>
+                <span className="shiba-organic-only">
+                  <span className="shiba-text-accent font-bold">
+                    ✈️ {tripData.tripInfo?.title || 'Trip Itinerary'}
+                  </span>
+                </span>
               </h1>
-              <div className="shiba-text-accent space-y-1">
-                <div>📅 {tripData.tripInfo?.startDate} → {tripData.tripInfo?.endDate}</div>
-                <div>📍 {tripData.days?.length || 0} days planned</div>
+              <div className="shiba-text-accent space-y-2">
+                <div className="flex items-center space-x-2">
+                  <span className="shiba-translucent px-2 py-1 rounded-full text-xs">
+                    📅 {tripData.tripInfo?.startDate} → {tripData.tripInfo?.endDate}
+                  </span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <span className="shiba-translucent px-2 py-1 rounded-full text-xs">
+                    📍 {tripData.days?.length || 0} days planned
+                  </span>
+                </div>
               </div>
             </div>
           </div>
 
-          {/* Budget Overview */}
-          {tripData.tripInfo?.budget && (
-            <div className="mb-8">
-              <div className="shiba-text-accent mb-2">
-                <span className="shiba-text-muted">$</span> cat budget.json
-              </div>
-              <div className="border border-green-500/30 rounded p-4 bg-green-500/5">
-                <h3 className="text-green-400 font-bold mb-2">💰 Trip Budget</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                  <div>
-                    <div className="text-gray-400">Total Budget</div>
-                    <div className="text-green-400 font-bold">{tripData.tripInfo.budget.totalBudget}</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-400">Spent</div>
-                    <div className="text-red-400 font-bold">{tripData.tripInfo.budget.spent}</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-400">Remaining</div>
-                    <div className="text-yellow-400 font-bold">{tripData.tripInfo.budget.remaining}</div>
-                  </div>
-                  <div>
-                    <div className="text-gray-400">Currency</div>
-                    <div className="text-gray-300">{tripData.tripInfo.budget.currency}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
 
           {/* Days Overview */}
           <div className="mb-6">
-            <div className="shiba-text-accent mb-4">
-              <span className="shiba-text-muted">$</span> ls days/
+            <div className="shiba-text-accent mb-4 shiba-section-header">
+              <span className="shiba-terminal-only">
+                <span className="shiba-text-muted">$</span> ls days/
+              </span>
+              <span className="shiba-organic-only">
+                🗓️ Daily Itinerary
+              </span>
             </div>
             <div className="grid gap-4">
               {tripData.days?.map((day, index) => (
                 <div
                   key={day.id}
-                  className="shiba-card p-4 cursor-pointer group transition-all hover:shiba-glow"
+                  className="shiba-card shiba-card-interactive shiba-hover-lift shiba-border-animate shiba-glow-accent p-4 cursor-pointer group transition-all duration-300"
                   onClick={() => onDaySelect(day.id)}
                 >
                   <div className="flex items-start justify-between">
                     <div className="flex-1">
-                      <div className="flex items-center space-x-3 mb-2">
+                      <div className="flex items-center space-x-3 mb-3">
                         <span className="shiba-text-accent font-bold">
-                          day_{index + 1}.md
+                          <span className="shiba-terminal-only">day_{index + 1}.md</span>
+                          <span className="shiba-organic-only">Day {index + 1}</span>
                         </span>
-                        <span className="shiba-text-muted text-sm">
-                          {day.date}
+                        <span className="shiba-translucent px-2 py-1 rounded-full text-xs font-medium">
+                          📅 {day.date}
                         </span>
                         {day.weather && (
-                          <span className="shiba-text-secondary">
+                          <span className="shiba-translucent-light px-2 py-1 rounded-full text-xs border border-blue-400/20">
                             {day.weather.icon} {day.weather.temp}
                           </span>
                         )}
                       </div>
                       
-                      <div className="shiba-text-primary font-semibold mb-1">
-                        📍 {day.city}, {day.country}
+                      <div className="mb-3">
+                        <div className="shiba-translucent px-3 py-2 rounded-lg border shiba-glass-border inline-flex items-center space-x-2">
+                          <span className="text-lg">📍</span>
+                          <span className="shiba-text-primary font-semibold">{day.city}, {day.country}</span>
+                        </div>
                       </div>
                       
-                      <div className="shiba-text-secondary text-sm mb-3">
+                      <div className="shiba-text-secondary text-sm mb-4">
                         {day.dayPlan ? (
-                          <ul className="space-y-1">
+                          <div className="space-y-2">
                             {day.dayPlan.map((item, index) => (
-                              <li key={index} className="flex items-start">
-                                <span className="shiba-text-accent mr-2">•</span>
-                                <span>{item}</span>
-                              </li>
+                              <div key={index} className="group-hover:translate-x-1 transition-transform duration-300 leading-relaxed">
+                                {item}
+                              </div>
                             ))}
-                          </ul>
+                          </div>
                         ) : (
-                          <span>{day.overview}</span>
+                          <span className="italic">{day.overview}</span>
                         )}
                       </div>
 
                       {/* Quick Stats */}
-                      <div className="flex flex-wrap gap-4 text-xs">
-                        <span style={{color: 'var(--shiba-yellow)'}}>
-                          ⚡ {day.mandatoryActivities?.length || 0} mandatory
-                        </span>
-                        <span style={{color: 'var(--shiba-blue)'}}>
-                          🎯 {day.timeBlocks?.length || 0} time blocks
-                        </span>
-                        <span className="shiba-text-accent">
-                          📷 {day.photoSpots?.length || 0} photo spots
-                        </span>
-                        {day.transportation?.length > 0 && (
-                          <span style={{color: 'var(--shiba-green)'}}>
-                            🚗 transport
+                      <div className="flex flex-wrap gap-3 text-xs mt-3 pt-3 border-t shiba-glass-border">
+                        <div className="shiba-translucent-light px-2 py-1 rounded-full border border-yellow-400/30">
+                          <span style={{color: 'var(--shiba-yellow)'}}>
+                            ⚡ {day.mandatoryActivities?.length || 0} mandatory
                           </span>
+                        </div>
+                        <div className="shiba-translucent-light px-2 py-1 rounded-full border border-blue-400/30">
+                          <span style={{color: 'var(--shiba-blue)'}}>
+                            🎯 {day.timeBlocks?.length || 0} time blocks
+                          </span>
+                        </div>
+                        {day.transportation?.length > 0 && (
+                          <div className="shiba-translucent-light px-2 py-1 rounded-full border border-green-400/30">
+                            <span style={{color: 'var(--shiba-green)'}}>
+                              🚗 transport
+                            </span>
+                          </div>
                         )}
                       </div>
                     </div>
 
-                    <div className="shiba-text-accent group-hover:scale-110 transition-transform">
-                      →
+                    <div className="shiba-text-accent group-hover:scale-110 group-hover:translate-x-1 transition-all duration-300 text-xl">
+                      <span className="shiba-terminal-only">→</span>
+                      <span className="shiba-organic-only">✨</span>
                     </div>
                   </div>
                 </div>

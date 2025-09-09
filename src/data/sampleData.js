@@ -5,12 +5,15 @@ import { day3Data } from './day3Data.js';
 import { day4Data } from './day4Data.js';
 import { day5Data } from './day5Data.js';
 import { day6Data } from './day6Data.js';
+import { day7Data } from './day7Data.js';
+import { day8Data } from './day8Data.js';
+import { day9Data } from './day9Data.js';
 
 export const sampleTripData = {
   tripInfo: {
-    title: "Tokyo → Mount Fuji → Kyoto: Ultimate 6-Day Japan Adventure",
+    title: "Tokyo → Mount Fuji → Kyoto → Osaka: Ultimate Japan Adventure",
     startDate: "2025-11-26",
-    endDate: "2025-12-01", 
+    endDate: "2025-12-04", 
     travelers: ["User"],
     coverImage: "/images/tokyo-cover.jpg",
     budget: {
@@ -20,7 +23,7 @@ export const sampleTripData = {
       remaining: "¥25,720"
     }
   },
-  days: [day1Data, day2Data, day3Data, day4Data, day5Data, day6Data],
+  days: [day1Data, day2Data, day3Data, day4Data, day5Data, day6Data, day7Data, day8Data, day9Data],
   integrations: {
     weather: {
       api: "OpenWeatherMap",

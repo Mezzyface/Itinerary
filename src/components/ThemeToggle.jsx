@@ -16,6 +16,17 @@ const ThemeToggle = () => {
 
   const applyTheme = (dark) => {
     const root = document.documentElement
+    const body = document.body
+    
+    // Remove existing theme classes
+    body.classList.remove('theme-oled', 'theme-shiba')
+    
+    // Add appropriate theme class
+    if (dark) {
+      body.classList.add('theme-oled')
+    } else {
+      body.classList.add('theme-shiba')
+    }
     
     if (dark) {
       // Original Dark OLED theme
@@ -44,7 +55,7 @@ const ThemeToggle = () => {
       root.style.setProperty('--shiba-shadow', '0 4px 12px rgba(0, 0, 0, 0.4)')
       root.style.setProperty('--shiba-shadow-subtle', '0 2px 4px rgba(0, 0, 0, 0.3)')
     } else {
-      // Authentic Shiba Inu Obsidian Theme (Dark)
+      // Enhanced Shiba Inu Obsidian Theme (Dark)
       root.style.setProperty('--shiba-bg-primary', 'rgb(36, 39, 52)')        // exterior
       root.style.setProperty('--shiba-bg-secondary', 'rgb(38, 42, 58)')       // side  
       root.style.setProperty('--shiba-bg-tertiary', 'rgb(42, 45, 61)')        // base
@@ -56,19 +67,44 @@ const ThemeToggle = () => {
       root.style.setProperty('--shiba-terminal-bg', 'rgb(65, 69, 89)')        // surface0
       root.style.setProperty('--shiba-terminal-window', 'rgb(81, 86, 108)')   // surface1
       root.style.setProperty('--shiba-glass-border', 'rgba(235, 188, 186, 0.2)') // lily with opacity
+      
+      // Enhanced Color Palette
       root.style.setProperty('--shiba-red', 'rgb(255, 98, 107)')              // red
       root.style.setProperty('--shiba-green', 'rgb(56, 198, 141)')            // green
       root.style.setProperty('--shiba-blue', 'rgb(147, 183, 245)')            // blue
       root.style.setProperty('--shiba-yellow', 'rgb(249, 226, 175)')          // yellow
+      root.style.setProperty('--shiba-violet', 'rgb(196, 167, 231)')          // violet
+      root.style.setProperty('--shiba-sea', 'rgb(104, 188, 204)')             // sea/cyan
+      root.style.setProperty('--shiba-turquoise', 'rgb(128, 216, 220)')       // turquoise
+      root.style.setProperty('--shiba-orange', 'rgb(247, 157, 124)')          // orange
       
-      // Typography & Styling (Shiba Inu)
+      // Typography & Enhanced Styling
       root.style.setProperty('--shiba-font-family', '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif')
       root.style.setProperty('--shiba-font-mono', '"JetBrains Mono", "Fira Code", Monaco, Consolas, "Liberation Mono", "Courier New", monospace')
+      
+      // Enhanced Border Radius System
       root.style.setProperty('--shiba-border-radius', '10px')
       root.style.setProperty('--shiba-border-radius-sm', '5px')
       root.style.setProperty('--shiba-border-radius-lg', '15px')
-      root.style.setProperty('--shiba-shadow', '0 4px 6px 0 rgba(0,0,0,0.1), 0 1px 3px 1px rgba(0,0,0,0.05)')
-      root.style.setProperty('--shiba-shadow-subtle', '0 2px 4px rgba(0,0,0,0.05)')
+      root.style.setProperty('--shiba-border-radius-xl', '20px')
+      
+      // Advanced Shadow System
+      root.style.setProperty('--shiba-shadow-s', '0px 1px 2px rgba(36, 39, 52, 0.121), 0px 3.4px 6.7px rgba(36, 39, 52, 0.179), 0px 15px 30px rgba(36, 39, 52, 0.3)')
+      root.style.setProperty('--shiba-shadow-l', '0px 1.8px 7.3px rgba(36, 39, 52, 0.071), 0px 6.3px 24.7px rgba(36, 39, 52, 0.112), 0px 30px 90px rgba(36, 39, 52, 0.2)')
+      root.style.setProperty('--shiba-shadow', '0 4px 6px 0 rgba(36, 39, 52, 0.15), 0 1px 3px 1px rgba(36, 39, 52, 0.1)')
+      root.style.setProperty('--shiba-shadow-subtle', '0 2px 4px rgba(36, 39, 52, 0.08)')
+      
+      // Enhanced Interactive Shadows
+      root.style.setProperty('--shiba-input-shadow', 'inset 0 0.5px 0.5px 0.5px rgba(198, 206, 239, 0.09), 0 2px 4px 0 rgba(36, 39, 52, 0.15), 0 1px 1.5px 0 rgba(36, 39, 52, 0.1), 0 1px 2px 0 rgba(36, 39, 52, 0.2)')
+      root.style.setProperty('--shiba-input-shadow-hover', 'inset 0 0.5px 1px 0.5px rgba(198, 206, 239, 0.16), 0 2px 3px 0 rgba(36, 39, 52, 0.3), 0 1px 1.5px 0 rgba(36, 39, 52, 0.2), 0 1px 2px 0 rgba(36, 39, 52, 0.4)')
+      
+      // Translucency System
+      root.style.setProperty('--shiba-bg-translucent', 'rgba(36, 39, 52, 0.6)')
+      root.style.setProperty('--shiba-bg-translucent-light', 'rgba(42, 45, 61, 0.1)')
+      
+      // Card System
+      root.style.setProperty('--shiba-card-padding', '1.2em')
+      root.style.setProperty('--shiba-card-min-width', '180px')
     }
   }
 
@@ -82,7 +118,7 @@ const ThemeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-md transition-all duration-300 hover:scale-110 hover:bg-opacity-80"
+      className="shiba-btn-secondary shiba-hover-lift shiba-glow-accent p-2 rounded-md transition-all duration-300"
       style={{
         background: 'var(--shiba-bg-tertiary)',
         border: '1px solid var(--shiba-glass-border)',

@@ -29,20 +29,45 @@ code, pre, .font-mono {
   backdrop-filter: blur(12px);
 }
 
-/* Shiba Cards */
+/* Enhanced Shiba Cards */
 .shiba-card {
   background: var(--shiba-bg-secondary);
   border: 1px solid var(--shiba-glass-border);
   border-radius: var(--shiba-border-radius);
   box-shadow: var(--shiba-shadow-subtle);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease, border-width 0.2s ease;
   backdrop-filter: blur(8px);
+  padding: var(--shiba-card-padding, 1.2em);
+  min-width: var(--shiba-card-min-width, 180px);
+  position: relative;
 }
 
 .shiba-card:hover {
   transform: translateY(-2px);
-  box-shadow: var(--shiba-shadow);
+  box-shadow: var(--shiba-shadow-l);
   border-color: var(--shiba-accent);
+  border-left-width: 4px;
+  background: var(--shiba-bg-translucent-light);
+}
+
+/* Enhanced Card Variants */
+.shiba-card-elevated {
+  box-shadow: var(--shiba-shadow-s);
+}
+
+.shiba-card-elevated:hover {
+  box-shadow: var(--shiba-shadow-l);
+  transform: translateY(-4px);
+}
+
+.shiba-card-interactive {
+  cursor: pointer;
+  transition: all 0.2s ease, border-width 0.2s ease, background-color 0.2s ease;
+}
+
+.shiba-card-interactive:hover {
+  border-left-width: 4px;
+  background-color: var(--shiba-bg-translucent);
 }
 
 /* Shiba Buttons */
@@ -182,6 +207,103 @@ p, div, span {
   color: white;
 }
 
+/* Theme-Specific Visibility Controls */
+.theme-oled .shiba-organic-only {
+  display: none;
+}
+
+.theme-oled .shiba-terminal-only {
+  display: inline;
+}
+
+.theme-shiba .shiba-terminal-only {
+  display: none;
+}
+
+.theme-shiba .shiba-organic-only {
+  display: inline;
+}
+
+/* Enhanced Container Styling for Shiba Theme */
+.theme-shiba .shiba-content-container {
+  background: var(--shiba-bg-secondary);
+  border-radius: var(--shiba-border-radius-lg);
+  box-shadow: var(--shiba-shadow-l);
+  backdrop-filter: blur(12px);
+}
+
+.theme-oled .shiba-content-container {
+  background: var(--shiba-terminal-bg);
+  border-radius: var(--shiba-border-radius-sm) var(--shiba-border-radius-sm) 0 0;
+  box-shadow: var(--shiba-shadow);
+  backdrop-filter: blur(12px);
+}
+
+/* Organic Shiba Theme Headers */
+.theme-shiba .shiba-section-header {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  border-left: 4px solid var(--shiba-accent);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  background: var(--shiba-bg-translucent-light);
+  border-radius: var(--shiba-border-radius);
+  padding: 0.75rem 1rem;
+  box-shadow: var(--shiba-shadow-subtle);
+}
+
+.theme-oled .shiba-section-header {
+  font-family: var(--shiba-font-mono);
+  font-size: 0.95rem;
+}
+
+/* Enhanced Terminal Title Styling */
+.theme-shiba .shiba-terminal-title {
+  font-family: var(--shiba-font-family);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.theme-oled .shiba-terminal-title {
+  font-family: var(--shiba-font-mono);
+}
+
+/* Enhanced Card Styling for Organic Theme */
+.theme-shiba .shiba-card {
+  border-radius: var(--shiba-border-radius-lg);
+  background: linear-gradient(135deg, var(--shiba-bg-secondary) 0%, var(--shiba-bg-tertiary) 100%);
+  border: 2px solid var(--shiba-glass-border);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-shiba .shiba-card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: var(--shiba-shadow-l), 0 0 25px rgba(235, 188, 186, 0.15);
+  border-color: var(--shiba-accent);
+  background: linear-gradient(135deg, var(--shiba-bg-translucent) 0%, var(--shiba-bg-secondary) 100%);
+}
+
+/* Organic Button Styling */
+.theme-shiba .shiba-btn-primary, .theme-shiba .shiba-btn-secondary {
+  border-radius: var(--shiba-border-radius-lg);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.theme-shiba .shiba-btn-primary:hover, .theme-shiba .shiba-btn-secondary:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: var(--shiba-shadow-s);
+}
+
+/* Enhanced Day Card Styling for Organic Theme */
+.theme-shiba .shiba-card .shiba-text-accent {
+  color: var(--shiba-accent);
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(235, 188, 186, 0.3);
+}
+
 /* Focus States */
 button:focus,
 input:focus,
@@ -199,4 +321,107 @@ textarea:focus {
 .shiba-container-lg {
   border-radius: var(--shiba-border-radius-lg);
   box-shadow: var(--shiba-shadow);
+}
+
+/* Advanced Interactive Elements */
+.shiba-interactive {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.shiba-interactive:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shiba-shadow-s);
+}
+
+/* Enhanced Input Styling */
+.shiba-input, .shiba-textarea, .shiba-select {
+  background: var(--shiba-bg-secondary);
+  border: 1px solid var(--shiba-glass-border);
+  border-radius: var(--shiba-border-radius-sm);
+  color: var(--shiba-text-primary);
+  padding: 0.75rem 1rem;
+  font-family: var(--shiba-font-family);
+  box-shadow: var(--shiba-input-shadow);
+  transition: all 0.2s ease;
+}
+
+.shiba-input:hover, .shiba-textarea:hover, .shiba-select:hover {
+  box-shadow: var(--shiba-input-shadow-hover);
+  border-color: var(--shiba-accent);
+}
+
+.shiba-input:focus, .shiba-textarea:focus, .shiba-select:focus {
+  outline: none;
+  border-color: var(--shiba-accent);
+  box-shadow: var(--shiba-input-shadow-hover), 0 0 0 3px rgba(235, 188, 186, 0.1);
+}
+
+/* Enhanced Translucent Elements */
+.shiba-translucent {
+  background: var(--shiba-bg-translucent);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--shiba-glass-border);
+}
+
+.shiba-translucent-light {
+  background: var(--shiba-bg-translucent-light);
+  backdrop-filter: blur(8px);
+}
+
+/* Advanced Hover Animations */
+.shiba-hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.shiba-hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shiba-shadow-s);
+}
+
+.shiba-hover-grow {
+  transition: transform 0.2s ease;
+}
+
+.shiba-hover-grow:hover {
+  transform: scale(1.02);
+}
+
+/* Enhanced Border Animations */
+.shiba-border-animate {
+  border-left: 1px solid var(--shiba-glass-border);
+  transition: border-left-width 0.2s ease, background-color 0.2s ease;
+}
+
+.shiba-border-animate:hover {
+  border-left-width: 4px;
+  border-left-color: var(--shiba-accent);
+  background-color: var(--shiba-bg-translucent-light);
+}
+
+/* Enhanced Glow Effects */
+.shiba-glow-accent {
+  box-shadow: 0 0 20px rgba(235, 188, 186, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.shiba-glow-accent:hover {
+  box-shadow: 0 0 30px rgba(235, 188, 186, 0.4), var(--shiba-shadow-s);
+}
+
+/* Color-specific Glows */
+.shiba-glow-blue {
+  box-shadow: 0 0 15px rgba(147, 183, 245, 0.2);
+}
+
+.shiba-glow-blue:hover {
+  box-shadow: 0 0 25px rgba(147, 183, 245, 0.4);
+}
+
+.shiba-glow-green {
+  box-shadow: 0 0 15px rgba(56, 198, 141, 0.2);
+}
+
+.shiba-glow-green:hover {
+  box-shadow: 0 0 25px rgba(56, 198, 141, 0.4);
 }
