@@ -120,6 +120,55 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
             </div>
           )}
 
+          {/* Daily Budget */}
+          {dayData.budget && (
+            <div className="mb-8">
+              <div className="text-green-300 mb-2">
+                <span className="text-gray-500">$</span> cat daily_budget.json
+              </div>
+              <div className="border border-green-500/30 rounded p-4 bg-green-500/5">
+                <h3 className="text-green-400 font-bold mb-3">💰 Day Budget</h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm mb-4">
+                  <div>
+                    <div className="text-gray-400">Daily Budget</div>
+                    <div className="text-green-400 font-bold">{dayData.budget.dailyBudget}</div>
+                  </div>
+                  <div>
+                    <div className="text-gray-400">Spent Today</div>
+                    <div className="text-red-400 font-bold">{dayData.budget.spent}</div>
+                  </div>
+                  <div>
+                    <div className="text-gray-400">Remaining</div>
+                    <div className="text-yellow-400 font-bold">
+                      ${(parseFloat(dayData.budget.dailyBudget.replace('$', '')) - parseFloat(dayData.budget.spent.replace('$', ''))).toFixed(2)}
+                    </div>
+                  </div>
+                </div>
+                <div className="border-t border-green-500/20 pt-3">
+                  <div className="text-gray-400 text-xs mb-2">Breakdown:</div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+                    <div>
+                      <span className="text-gray-500">🏨 Accommodation:</span>
+                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.accommodation}</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">🎯 Activities:</span>
+                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.activities}</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">🍜 Food:</span>
+                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.food}</span>
+                    </div>
+                    <div>
+                      <span className="text-gray-500">🚇 Transport:</span>
+                      <span className="text-gray-300 ml-1">{dayData.budget.breakdown.transport}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Time Blocks */}
           {dayData.timeBlocks && dayData.timeBlocks.length > 0 && (
             <div className="mb-8">
@@ -170,13 +219,13 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
                                     <div className="space-y-1">
                                       {option.links.map((link, linkIndex) => (
                                         <div key={linkIndex} className="font-mono text-xs">
-                                          <span className="text-gray-500">$</span> 
-                                          <span className="text-blue-400 ml-1">curl</span>
+                                          <span className="text-gray-500">$ </span>
+                                          <span className="text-blue-400">curl </span>
                                           <a 
                                             href={link.url} 
                                             target="_blank" 
                                             rel="noopener noreferrer"
-                                            className="text-shiba-accent hover:text-shiba-accent-hover underline ml-1 transition-colors"
+                                            className="text-shiba-accent hover:text-shiba-accent-hover underline transition-colors"
                                           >
                                             {link.name}
                                           </a>

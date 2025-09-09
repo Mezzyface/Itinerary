@@ -1,10 +1,17 @@
+// Updated Tokyo Trip Data
 export const sampleTripData = {
   tripInfo: {
     title: "Tokyo Shibuya Experience",
     startDate: "2024-11-26",
     endDate: "2024-11-27", 
     travelers: ["User"],
-    coverImage: "/images/tokyo-cover.jpg"
+    coverImage: "/images/tokyo-cover.jpg",
+    budget: {
+      totalBudget: "$200.00",
+      currency: "USD",
+      spent: "$106.02",
+      remaining: "$93.98"
+    }
   },
   days: [
     {
@@ -66,7 +73,17 @@ export const sampleTripData = {
         }
       ],
       transportation: [],
-      photoSpots: []
+      photoSpots: [],
+      budget: {
+        dailyBudget: "$100.00",
+        spent: "$106.02",
+        breakdown: {
+          accommodation: "$106.02",
+          activities: "$0.00",
+          food: "$0.00",
+          transport: "$0.00"
+        }
+      }
     },
     {
       id: "day-2",
@@ -101,7 +118,17 @@ export const sampleTripData = {
       ],
       timeBlocks: [],
       transportation: [],
-      photoSpots: []
+      photoSpots: [],
+      budget: {
+        dailyBudget: "$100.00",
+        spent: "$0.00",
+        breakdown: {
+          accommodation: "$0.00",
+          activities: "$0.00",
+          food: "$0.00",
+          transport: "$0.00"
+        }
+      }
     }
   ],
   integrations: {

@@ -35,6 +35,36 @@ const TripOverview = ({ tripData, onDaySelect }) => {
             </div>
           </div>
 
+          {/* Budget Overview */}
+          {tripData.tripInfo?.budget && (
+            <div className="mb-8">
+              <div className="shiba-text-accent mb-2">
+                <span className="shiba-text-muted">$</span> cat budget.json
+              </div>
+              <div className="border border-green-500/30 rounded p-4 bg-green-500/5">
+                <h3 className="text-green-400 font-bold mb-2">💰 Trip Budget</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                  <div>
+                    <div className="text-gray-400">Total Budget</div>
+                    <div className="text-green-400 font-bold">{tripData.tripInfo.budget.totalBudget}</div>
+                  </div>
+                  <div>
+                    <div className="text-gray-400">Spent</div>
+                    <div className="text-red-400 font-bold">{tripData.tripInfo.budget.spent}</div>
+                  </div>
+                  <div>
+                    <div className="text-gray-400">Remaining</div>
+                    <div className="text-yellow-400 font-bold">{tripData.tripInfo.budget.remaining}</div>
+                  </div>
+                  <div>
+                    <div className="text-gray-400">Currency</div>
+                    <div className="text-gray-300">{tripData.tripInfo.budget.currency}</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* Days Overview */}
           <div className="mb-6">
             <div className="shiba-text-accent mb-4">
