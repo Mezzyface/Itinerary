@@ -1,160 +1,111 @@
 export const sampleTripData = {
   tripInfo: {
-    title: "European Adventure 2025",
-    startDate: "2025-06-15",
-    endDate: "2025-06-25", 
+    title: "Tokyo Shibuya Experience",
+    startDate: "2024-11-26",
+    endDate: "2024-11-27", 
     travelers: ["User"],
-    coverImage: "/images/europe-cover.jpg"
+    coverImage: "/images/tokyo-cover.jpg"
   },
   days: [
     {
       id: "day-1",
-      date: "2025-06-15",
-      title: "Arrival in Paris",
-      city: "Paris",
-      country: "France", 
-      coordinates: { lat: 48.8566, lng: 2.3522 },
-      overview: "First day exploring the City of Light with essential sights and settling in.",
+      date: "2024-11-26",
+      title: "Tokyo Shibuya Stay",
+      city: "Shibuya City",
+      country: "Japan", 
+      coordinates: { lat: 35.6585, lng: 139.7016 },
+      overview: "Exploring Tokyo's vibrant Shibuya district with easy access to Ebisu and nearby attractions.",
       weather: {
-        temp: "18°C",
-        condition: "Cloudy", 
-        icon: "☁️"
-      },
-      accommodations: {
-        name: "Hotel des Grands Boulevards",
-        address: "17 Boulevard Poissonnière, 75002 Paris",
-        checkIn: "15:00",
-        checkOut: "11:00",
-        confirmationCode: "HGB2024-789"
-      },
-      mandatoryActivities: [
-        {
-          id: "flight-1",
-          time: "09:30",
-          title: "🛬 Flight Landing CDG",
-          duration: "30 minutes",
-          location: "Charles de Gaulle Airport",
-          status: "completed",
-          notes: "Air France AF1234 - Terminal 2E",
-          confirmationCode: "AF1234X",
-          qrCode: "flight-qr-001"
-        },
-        {
-          id: "hotel-1", 
-          time: "15:00",
-          title: "🏨 Hotel Check-in",
-          duration: "30 minutes", 
-          location: "Hotel des Grands Boulevards",
-          status: "completed",
-          notes: "Room 302 - Early check-in confirmed",
-          confirmationCode: "HGB2024-789"
-        }
-      ],
-      timeBlocks: [
-        {
-          id: "evening-block",
-          timeRange: "19:00 - 22:00",
-          title: "🌆 Evening Exploration",
-          options: [
-            {
-              title: "🗼 Eiffel Tower Visit",
-              duration: "2 hours",
-              cost: "€25",
-              photoSpots: ["Tower base", "Trocadéro viewpoint", "Seine reflection"],
-              coordinates: { lat: 48.8584, lng: 2.2945 }
-            },
-            {
-              title: "🚢 Seine River Cruise", 
-              duration: "1.5 hours",
-              cost: "€15",
-              photoSpots: ["Notre-Dame view", "Louvre from river", "Sunset cruise"],
-              coordinates: { lat: 48.8566, lng: 2.3412 }
-            },
-            {
-              title: "🍷 Montmartre Dinner",
-              duration: "3 hours", 
-              cost: "€45",
-              photoSpots: ["Sacré-Cœur steps", "Artist squares", "City panorama"],
-              coordinates: { lat: 48.8867, lng: 2.3431 }
-            }
-          ]
-        }
-      ],
-      transportation: [],
-      photoSpots: [
-        {
-          name: "🗼 Eiffel Tower",
-          coordinates: { lat: 48.8584, lng: 2.2945 },
-          description: "Iconic iron tower, best shots from Trocadéro"
-        },
-        {
-          name: "🖼️ Louvre Pyramid",
-          coordinates: { lat: 48.8606, lng: 2.3376 }, 
-          description: "Glass pyramid entrance, great reflections"
-        },
-        {
-          name: "⛪ Notre-Dame Cathedral",
-          coordinates: { lat: 48.8530, lng: 2.3499 },
-          description: "Gothic architecture (exterior only)"
-        }
-      ]
-    },
-    {
-      id: "day-2",
-      date: "2025-06-16",
-      title: "Museums & Monuments", 
-      city: "Paris",
-      country: "France",
-      coordinates: { lat: 48.8606, lng: 2.3376 },
-      overview: "Full day of iconic Parisian culture and history.",
-      weather: {
-        temp: "22°C",
-        condition: "Sunny",
+        temp: "15°C",
+        condition: "Clear", 
         icon: "☀️"
       },
       accommodations: {
-        name: "Hotel des Grands Boulevards",
-        address: "17 Boulevard Poissonnière, 75002 Paris"
+        name: "恵比寿駅から徒歩4分/渋谷駅まで徒歩圏内/家具家電付/HJ SHIBUYA b01",
+        address: "3-chōme-20-10 Higashi, Shibuya City, Tokyo Prefecture 150-0011, Japan",
+        checkIn: "16:00",
+        checkOut: "10:00",
+        confirmationCode: "HMRDDYA2N4",
+        host: "ライワマンション",
+        notes: "Self check-in with lockbox, 4 min walk from Ebisu Station",
+        totalCost: "$106.02"
       },
       mandatoryActivities: [
         {
-          id: "tour-1",
-          time: "09:00",
-          title: "🏛️ Louvre Museum Timed Entry",
-          duration: "3 hours",
-          location: "Musée du Louvre",
+          id: "airbnb-checkin",
+          time: "16:00",
+          title: "🏠 Airbnb Check-in",
+          duration: "30 minutes",
+          location: "HJ SHIBUYA b01",
           status: "upcoming",
-          notes: "Pre-purchased tickets - Pyramid Entrance",
-          confirmationCode: "LV-2024-4567",
-          qrCode: "louvre-ticket-qr"
+          notes: "Self check-in with lockbox, 4 min walk from Ebisu Station",
+          confirmationCode: "HMRDDYA2N4"
+        },
+        {
+          id: "airbnb-checkout", 
+          time: "10:00",
+          title: "🎒 Checkout & Departure",
+          duration: "30 minutes", 
+          location: "HJ SHIBUYA b01",
+          status: "upcoming",
+          notes: "Checkout by 10:00 AM, leave keys in lockbox",
+          confirmationCode: "HMRDDYA2N4"
         }
       ],
       timeBlocks: [
         {
           id: "afternoon-block",
-          timeRange: "14:00 - 17:00",
-          title: "🎨 Afternoon Adventures",
+          timeRange: "17:00 - 20:00",
+          title: "🌃 Shibuya Exploration",
           options: [
             {
-              title: "🛍️ Champs-Élysées Shopping",
-              duration: "3 hours",
-              cost: "€0-200",
-              photoSpots: ["Arc de Triomphe", "Louis Vuitton flagship", "Café terraces"],
-              coordinates: { lat: 48.8738, lng: 2.2950 }
+              title: "🚶‍♂️ Shibuya Crossing Experience",
+              duration: "1 hour",
+              cost: "¥0",
+              photoSpots: ["Famous crossing", "Sky view", "Hachiko statue"],
+              coordinates: { lat: 35.6598, lng: 139.7006 }
             },
             {
-              title: "📚 Latin Quarter Walking Tour",
-              duration: "2.5 hours", 
-              cost: "€20",
-              photoSpots: ["Panthéon", "Sorbonne University", "Shakespeare & Company"],
-              coordinates: { lat: 48.8462, lng: 2.3372 }
-            },
-            {
-              title: "🎨 Musée d'Orsay",
+              title: "🛍️ Center Gai Shopping", 
               duration: "2 hours",
-              cost: "€16",
-              photoSpots: ["Impressionist galleries", "Clock window view", "Sculpture halls"],
-              coordinates: { lat: 48.8599, lng: 2.3266 }
+              cost: "¥2000-5000",
+              photoSpots: ["Neon lights", "Street fashion", "Arcade games"],
+              coordinates: { lat: 35.6617, lng: 139.6980 }
+            },
+            {
+              title: "🍜 Ebisu Ramen Tour",
+              duration: "2 hours", 
+              cost: "¥1500",
+              photoSpots: ["Authentic ramen shops", "Local atmosphere", "Food shots"],
+              coordinates: { lat: 35.6464, lng: 139.7103 }
+            }
+          ]
+        },
+        {
+          id: "evening-block",
+          timeRange: "20:00 - 23:00",
+          title: "🌙 Tokyo Nightlife",
+          options: [
+            {
+              title: "🍻 Shibuya Izakaya Experience",
+              duration: "2.5 hours",
+              cost: "¥3000",
+              photoSpots: ["Traditional pub", "Local crowd", "Japanese dishes"],
+              coordinates: { lat: 35.6580, lng: 139.7016 }
+            },
+            {
+              title: "🎤 Karaoke in Shibuya", 
+              duration: "2 hours",
+              cost: "¥2500",
+              photoSpots: ["Karaoke booth", "Group fun", "Tokyo night views"],
+              coordinates: { lat: 35.6598, lng: 139.7006 }
+            },
+            {
+              title: "🌃 Tokyo Tower Night View",
+              duration: "3 hours", 
+              cost: "¥3000",
+              photoSpots: ["Tokyo skyline", "Tower illumination", "City panorama"],
+              coordinates: { lat: 35.6586, lng: 139.7454 }
             }
           ]
         }
@@ -162,80 +113,24 @@ export const sampleTripData = {
       transportation: [],
       photoSpots: [
         {
-          name: "🏆 Arc de Triomphe",
-          coordinates: { lat: 48.8738, lng: 2.2950 },
-          description: "Climb to the top for Champs-Élysées view"
+          name: "🚶‍♂️ Shibuya Crossing",
+          coordinates: { lat: 35.6598, lng: 139.7006 },
+          description: "World's busiest pedestrian crossing, best shots from sky view"
         },
         {
-          name: "⛪ Sacré-Cœur Basilica", 
-          coordinates: { lat: 48.8867, lng: 2.3431 },
-          description: "Montmartre hilltop, panoramic Paris views"
-        }
-      ]
-    },
-    {
-      id: "day-3",
-      date: "2025-06-17",
-      title: "Travel to Rome",
-      city: "Rome",
-      country: "Italy", 
-      coordinates: { lat: 41.9028, lng: 12.4964 },
-      overview: "High-speed train journey to the Eternal City.",
-      weather: {
-        temp: "25°C",
-        condition: "Partly Cloudy",
-        icon: "⛅"
-      },
-      accommodations: {
-        name: "Hotel Artemide",
-        address: "Via Nazionale, 22, 00184 Roma",
-        checkIn: "15:00",
-        confirmationCode: "ART2025-002"
-      },
-      mandatoryActivities: [
-        {
-          id: "train-1",
-          time: "08:15",
-          title: "🚄 High-Speed Train to Rome",
-          duration: "11h 30m",
-          location: "Gare de Lyon, Paris → Roma Termini",
-          status: "upcoming",
-          notes: "TGV, Car 7, Seats 45A-45B",
-          confirmationCode: "SNCF-TGV-789123"
+          name: "🐕 Hachiko Statue",
+          coordinates: { lat: 35.6590, lng: 139.7005 }, 
+          description: "Famous loyal dog statue, perfect for tourist photos"
         },
         {
-          id: "rome-hotel-checkin",
-          time: "20:00",
-          title: "🏨 Hotel Check-in Rome",
-          duration: "30 minutes",
-          location: "Hotel Artemide",
-          status: "upcoming",
-          confirmationCode: "ART2025-002"
-        }
-      ],
-      timeBlocks: [],
-      transportation: [
+          name: "🌃 Shibuya Sky",
+          coordinates: { lat: 35.6585, lng: 139.7016 },
+          description: "Rooftop observation deck with panoramic Tokyo views"
+        },
         {
-          type: "train",
-          provider: "SNCF",
-          departure: {
-            location: "Gare de Lyon, Paris",
-            time: "08:15"
-          },
-          arrival: {
-            location: "Roma Termini",
-            time: "19:45"
-          },
-          duration: "11h 30m",
-          cost: "€89",
-          confirmationCode: "SNCF-TGV-789123"
-        }
-      ],
-      photoSpots: [
-        {
-          name: "🚄 Train Journey Views",
-          coordinates: { lat: 46.0, lng: 6.0 },
-          description: "Alps crossing, countryside landscapes"
+          name: "🍜 Ebisu Food Scene",
+          coordinates: { lat: 35.6464, lng: 139.7103 },
+          description: "Authentic local restaurants and street food"
         }
       ]
     }
