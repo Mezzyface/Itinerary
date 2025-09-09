@@ -155,8 +155,35 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
                               <div className="text-gray-300 text-sm space-y-1">
                                 <div>⏱️ Duration: {option.duration}</div>
                                 <div>💰 Cost: {option.cost}</div>
+                                {option.description && (
+                                  <div>📝 {option.description}</div>
+                                )}
+                                {option.notes && (
+                                  <div>💡 {option.notes}</div>
+                                )}
                                 {option.photoSpots && (
                                   <div>📷 Photo spots: {option.photoSpots.join(', ')}</div>
+                                )}
+                                {option.links && option.links.length > 0 && (
+                                  <div className="mt-2 pt-2 border-t border-gray-600/20">
+                                    <div className="text-shiba-accent text-xs mb-1">🔗 Links:</div>
+                                    <div className="space-y-1">
+                                      {option.links.map((link, linkIndex) => (
+                                        <div key={linkIndex} className="font-mono text-xs">
+                                          <span className="text-gray-500">$</span> 
+                                          <span className="text-blue-400 ml-1">curl</span>
+                                          <a 
+                                            href={link.url} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="text-shiba-accent hover:text-shiba-accent-hover underline ml-1 transition-colors"
+                                          >
+                                            {link.name}
+                                          </a>
+                                        </div>
+                                      ))}
+                                    </div>
+                                  </div>
                                 )}
                               </div>
                             </div>
