@@ -14,7 +14,8 @@ export const day6Data = {
     "06:00 - Dawn arrival and torii gate exploration",
     "08:00 - Goshuin collection throughout shrine complex",
     "11:00 - Complete pilgrimage to mountain summit",
-    "14:00 - Lunch and explore Fushimi district",
+    "12:00 - Lunch break after shrine marathon",
+    "15:30 - Visit Kyoto International Manga Museum",
     "17:00 - Final temple visits and departure preparation"
   ],
   weather: {
@@ -62,6 +63,19 @@ export const day6Data = {
       links: [
         { name: "Fushimi Inari Guide", url: "https://jinja-gosyuin.com/fushimiinaritaisya/" },
         { name: "Navigate to Shrine", url: "https://maps.app.goo.gl/ddZnnVp5dNGqjFLv7" }
+      ]
+    },
+    {
+      id: "manga-museum-mandatory",
+      time: "15:30",
+      title: "📚 Kyoto International Manga Museum Visit",
+      duration: "1.5 hours",
+      location: "Kyoto International Manga Museum",
+      status: "upcoming",
+      notes: "Pre-booked online reservation for guaranteed entry. Explore Japan's manga culture with over 300,000 volumes.",
+      links: [
+        { name: "Kyoto Manga Museum", url: "https://kyotomm.jp/en/" },
+        { name: "Online Ticket Reservation", url: "https://kyotomm.jp/en/visit/tickets/" }
       ]
     }
   ],
@@ -177,19 +191,47 @@ export const day6Data = {
       ]
     },
     {
-      id: "post-shrine-reflection",
-      timeRange: "11:00 - 12:00",
-      title: "🍵 Traditional Tea & Reflection",
+      id: "lunch-break",
+      timeRange: "12:00 - 14:00",
+      title: "🍜 Lunch Break",
       options: [
         {
-          title: "🍵 Traditional Tea House Experience",
-          duration: "1 hour",
-          cost: "¥800-1,200",
-          photoSpots: ["Traditional tea ceremony", "Goshuin book display", "Peaceful reflection", "Local tea culture"],
+          title: "🍜 Traditional Japanese Lunch",
+          duration: "2 hours",
+          cost: "¥1,500-2,500",
+          photoSpots: ["Traditional Japanese dishes", "Local restaurant atmosphere", "Food presentation", "Relaxing lunch setting"],
           coordinates: { lat: 34.967146, lng: 135.772695 },
-          description: "Traditional tea experience near Fushimi Inari to reflect on goshuin collection journey",
-          hours: "11:00-12:00",
-          notes: "Perfect way to conclude the intensive shrine marathon with peaceful reflection"
+          description: "Well-deserved lunch break after intensive morning shrine activities in Fushimi area",
+          hours: "12:00-14:00",
+          notes: "Rest and recharge with authentic Japanese cuisine before afternoon manga museum visit",
+          breakdown: {
+            "Lunch": "¥1,500-2,500"
+          }
+        }
+      ]
+    },
+    {
+      id: "manga-museum-visit",
+      timeRange: "15:30 - 17:00",
+      title: "📚 Kyoto International Manga Museum",
+      options: [
+        {
+          title: "📚 Manga Museum Exploration",
+          duration: "1.5 hours",
+          cost: "¥900",
+          photoSpots: ["Manga wall library", "Reading areas", "Special exhibitions", "Original manga artwork"],
+          coordinates: { lat: 35.0103, lng: 135.7594 },
+          description: "Explore Japan's manga culture at this unique museum with over 300,000 manga volumes",
+          hours: "15:30-17:00",
+          links: [
+            { name: "Kyoto Manga Museum", url: "https://kyotomm.jp/en/" },
+            { name: "Online Ticket Reservation", url: "https://kyotomm.jp/en/visit/tickets/" },
+            { name: "Museum Location", url: "https://maps.app.goo.gl/manga-museum-kyoto" }
+          ],
+          breakdown: {
+            "Museum Admission": "¥900"
+          },
+          notes: "Perfect cultural experience after morning shrine activities - browse manga, attend exhibitions. Pre-booked online reservation for guaranteed entry."
         }
       ]
     }
