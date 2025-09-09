@@ -9,6 +9,14 @@ export const day3Data = {
   country: "Japan", 
   coordinates: { lat: 35.5077, lng: 138.7592 },
   overview: "🗻 Fuji Views Adventure! Iconic Chureito Pagoda at sunrise, shrine hopping for goshuin collection, and stunning lakeside views. The perfect day to capture Mount Fuji's majesty from multiple angles.",
+  dayPlan: [
+    "06:00 - Early morning departure to Chureito Pagoda",
+    "07:00 - Sunrise photography at pagoda with Mount Fuji",
+    "10:00 - Shrine hopping for goshuin collection",
+    "13:00 - Lakeside lunch with mountain views",
+    "15:00 - Kawaguchi Lake exploration and boat ride",
+    "18:00 - Traditional dinner at ryokan"
+  ],
   weather: {
     temp: "8-15°C (46-59°F)",
     condition: "Clear skies ideal for Fuji views", 

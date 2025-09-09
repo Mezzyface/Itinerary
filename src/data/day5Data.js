@@ -9,6 +9,14 @@ export const day5Data = {
   country: "Japan", 
   coordinates: { lat: 35.0116, lng: 135.7681 },
   overview: "🏯 Early departure from Mount Fuji camping to Kyoto, then immersive temple and shrine adventure through historic Higashiyama district! Comprehensive goshuin collection tour through traditional temples, ending with magical evening illuminations and speakeasy experience.",
+  dayPlan: [
+    "08:00 - Pack up camp and depart for Kyoto",
+    "12:00 - Arrive in Kyoto and check into accommodation",
+    "14:00 - Start Higashiyama temple district tour",
+    "16:00 - Goshuin collection at traditional temples",
+    "18:00 - Evening temple illuminations",
+    "20:00 - Dinner and explore local speakeasy scene"
+  ],
   weather: {
     temp: "8-16°C (46-61°F)",
     condition: "Cool autumn weather, perfect for temple hopping", 

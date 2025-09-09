@@ -29,7 +29,6 @@ const TripOverview = ({ tripData, onDaySelect }) => {
               </h1>
               <div className="shiba-text-accent space-y-1">
                 <div>📅 {tripData.tripInfo?.startDate} → {tripData.tripInfo?.endDate}</div>
-                <div>👥 Travelers: {tripData.tripInfo?.travelers?.join(', ')}</div>
                 <div>📍 {tripData.days?.length || 0} days planned</div>
               </div>
             </div>
@@ -98,7 +97,18 @@ const TripOverview = ({ tripData, onDaySelect }) => {
                       </div>
                       
                       <div className="shiba-text-secondary text-sm mb-3">
-                        {day.overview}
+                        {day.dayPlan ? (
+                          <ul className="space-y-1">
+                            {day.dayPlan.map((item, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="shiba-text-accent mr-2">•</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        ) : (
+                          <span>{day.overview}</span>
+                        )}
                       </div>
 
                       {/* Quick Stats */}

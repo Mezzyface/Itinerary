@@ -9,6 +9,14 @@ export const day6Data = {
   country: "Japan", 
   coordinates: { lat: 34.967146, lng: 135.772695 },
   overview: "🦊 Early morning pilgrimage to Fushimi Inari Taisha for the ultimate goshuin collection experience! Beat the crowds with dawn arrival, collect multiple sacred stamps throughout the massive shrine complex, and experience the thousand torii gates in peaceful morning light.",
+  dayPlan: [
+    "05:30 - Early morning departure to Fushimi Inari",
+    "06:00 - Dawn arrival and torii gate exploration",
+    "08:00 - Goshuin collection throughout shrine complex",
+    "11:00 - Complete pilgrimage to mountain summit",
+    "14:00 - Lunch and explore Fushimi district",
+    "17:00 - Final temple visits and departure preparation"
+  ],
   weather: {
     temp: "6-14°C (43-57°F)",
     condition: "Cool morning, perfect for shrine exploration", 

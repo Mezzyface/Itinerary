@@ -9,6 +9,14 @@ export const day4Data = {
   country: "Japan", 
   coordinates: { lat: 35.5135, lng: 138.7661 },
   overview: "🏕️ Camping adventure near Mount Fuji! Outdoor experience with tent site accommodation, surrounded by nature and mountain views. Perfect way to connect with Japan's natural beauty.",
+  dayPlan: [
+    "10:00 - Check out of ryokan and pack for camping",
+    "12:00 - Travel to Fujikawa Camp site",
+    "15:00 - Set up tent and camp site",
+    "17:00 - Nature hiking and Mount Fuji photography",
+    "19:00 - Camping dinner and stargazing",
+    "21:00 - Campfire and traditional outdoor experience"
+  ],
   weather: {
     temp: "5-12°C (41-54°F)",
     condition: "Cool autumn weather, perfect for camping", 
