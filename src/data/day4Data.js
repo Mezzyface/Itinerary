@@ -37,8 +37,7 @@ export const day4Data = {
       email: "ozarka30@gmail.com"
     },
     links: [
-      { name: "Fujikawa Camp Official Site", url: "https://fujikawa-camp.jp/" },
-      { name: "Campsite Location", url: "https://maps.app.goo.gl/fujikawa-camp-location" }
+      { name: "Fujikawa Camp Official Site", url: "https://fujikawa-camp.jp/" }
     ]
   },
   mandatoryActivities: [
@@ -65,7 +64,6 @@ export const day4Data = {
       confirmationCode: "TENT112925",
       links: [
         { name: "Fujikawa Camp Site", url: "https://fujikawa-camp.jp/" },
-        { name: "Campsite Location", url: "https://maps.app.goo.gl/fujikawa-camp-location" },
         { name: "Equipment Rental", url: "https://hinata-rental.me/" }
       ]
     }

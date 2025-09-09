@@ -10,12 +10,13 @@ export const day5Data = {
   coordinates: { lat: 35.0116, lng: 135.7681 },
   overview: "🏯 Early departure from Mount Fuji camping to Kyoto, then immersive temple and shrine adventure through historic Higashiyama district! Comprehensive goshuin collection tour through traditional temples, ending with magical evening illuminations and speakeasy experience.",
   dayPlan: [
-    "08:00 - Pack up camp and depart for Kyoto",
-    "12:00 - Arrive in Kyoto and check into accommodation",
-    "14:00 - Start Higashiyama temple district tour",
-    "16:00 - Goshuin collection at traditional temples",
+    "10:00 - Pack up camp and depart for Kyoto",
+    "14:00 - Arrive in Kyoto and wait for accommodation check-in",
+    "15:00 - Check into Kyoto accommodation",
+    "16:00 - Start Higashiyama temple district tour",
     "18:00 - Evening temple illuminations",
-    "20:00 - Dinner and explore local speakeasy scene"
+    "19:00 - Premium tonkatsu dinner",
+    "21:00 - Explore local speakeasy scene"
   ],
   weather: {
     temp: "8-16°C (46-61°F)",
@@ -25,7 +26,7 @@ export const day5Data = {
   accommodations: {
     name: "FreeBreakfast&WIFI*NEAR→Nijojo*CozyKoreanMom'sHome",
     address: "180 Jurakumawari Nishimachi, Nakagyō-ku, Kyōto-shi, Kyōto-fu 604-8402, Japan",
-    checkIn: "After arrival from Mount Fuji camping - November 30, 15:00",
+    checkIn: "November 30, 15:00 (3:00 PM)",
     checkOut: "December 2, 11:00 AM",
     confirmationCode: "HMCDYDAZEN",
     host: "寧保 (Ningbao)",
@@ -41,34 +42,34 @@ export const day5Data = {
   mandatoryActivities: [
     {
       id: "campsite-departure",
-      time: "05:30",
+      time: "10:00",
       title: "🏕️ Pack Up Fujikawa Camp",
       duration: "30 minutes",
       location: "Fujikawa Camp",
       status: "upcoming",
-      notes: "Early departure - pack campsite and prepare for epic Kyoto adventure",
+      notes: "Leisurely morning departure - pack campsite and prepare for Kyoto adventure",
       confirmationCode: "TENT112925"
     },
     {
       id: "travel-to-kyoto",
-      time: "06:00",
+      time: "10:30",
       title: "🚄 Mount Fuji → Kyoto Express Journey",
-      duration: "2.5 hours",
+      duration: "3.5 hours",
       location: "Fujikawa Camp → Kyoto Station",
       status: "upcoming",
-      notes: "Early morning travel from campsite to Kawaguchiko Station, then express route to Kyoto for temple tour",
+      notes: "Comfortable morning travel from campsite to Kawaguchiko Station, then express route to Kyoto for temple tour",
       links: [
         { name: "Fujikawa Camp to Kyoto Route", url: "https://japantravel.navitime.com/en/area/jp/route/result/?start=00007890&goal=00001756&start_name=Fujikawa&goal_name=Kyoto&cid=&from=route_top_search_box&date_time=2025-11-29T11%3A00&ferry=false&taxi=false" }
       ]
     },
     {
       id: "airbnb-checkin-kyoto",
-      time: "09:00",
+      time: "15:00",
       title: "🏠 Kyoto Airbnb Check-in",
       duration: "30 minutes",
       location: "Central Kyoto Airbnb",
       status: "upcoming",
-      notes: "Check in to central Kyoto accommodation and prepare for Higashiyama temple district tour",
+      notes: "Check in to central Kyoto accommodation at 3PM and prepare for Higashiyama temple district tour",
       confirmationCode: "HMCDYDAZEN",
       links: [
         { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMCDYDAZEN" }
@@ -90,26 +91,29 @@ export const day5Data = {
   ],
   timeBlocks: [
     {
-      id: "morning-exploration",
-      timeRange: "09:30 - 11:00",
-      title: "🏯 Kyoto Traditional District Exploration",
+      id: "arrival-wait-time",
+      timeRange: "14:00 - 15:00",
+      title: "⏰ Pre-Check-in Exploration",
       options: [
         {
-          title: "🏯 Gion District Morning Walk",
-          duration: "1.5 hours",
-          cost: "¥0",
-          photoSpots: ["Traditional wooden buildings", "Geisha district streets", "Historic tea houses", "Morning light on cobblestones"],
-          coordinates: { lat: 35.0039, lng: 135.7751 },
-          description: "Peaceful morning exploration of historic Gion district before temple hopping begins",
-          hours: "09:30-11:00",
-          notes: "Perfect introduction to Kyoto's traditional atmosphere"
+          title: "🎒 Drop Bags & Explore Kyoto Station Area",
+          duration: "1 hour",
+          cost: "¥400",
+          photoSpots: ["Kyoto Station architecture", "Local station cafes", "Traditional shopping streets"],
+          coordinates: { lat: 34.9855, lng: 135.7586 },
+          description: "Store luggage at station lockers and explore nearby areas while waiting for 3PM check-in",
+          hours: "14:00-15:00",
+          notes: "Use coin lockers to store bags, grab coffee and explore station surroundings",
+          breakdown: {
+            "Coin Locker": "¥400"
+          }
         }
       ]
     },
     {
       id: "higashiyama-temple-tour",
-      timeRange: "11:30 - 16:30",
-      title: "⛩️ Higashiyama District Temple Marathon",
+      timeRange: "15:30 - 18:30",
+      title: "📿 Goshuin Collection",
       options: [
         {
           title: "📿 Goshuin #1: Yasaka Shrine",
@@ -118,7 +122,7 @@ export const day5Data = {
           photoSpots: ["Iconic shrine entrance", "Traditional vermillion buildings", "Gion district views", "Sacred lanterns"],
           coordinates: { lat: 35.0036, lng: 135.7785 },
           description: "Famous Yasaka Shrine - gateway to Higashiyama temple district",
-          hours: "11:30-12:00",
+          hours: "15:30-16:00",
           links: [
             { name: "Yasaka Shrine", url: "https://maps.app.goo.gl/JT2BEAoVLzTK9FVc6" },
             { name: "Shrine Site", url: "https://www.yasaka-jinja.or.jp/prize_all/" }
@@ -134,7 +138,7 @@ export const day5Data = {
           photoSpots: ["Zen garden", "Bamboo groves", "Traditional temple halls", "Stone pathways"],
           coordinates: { lat: 35.0015, lng: 135.7806 },
           description: "Historic Zen temple with beautiful gardens and architecture",
-          hours: "12:00-12:30",
+          hours: "16:00-16:30",
           links: [
             { name: "Kodai-ji Temple", url: "https://maps.app.goo.gl/ibkmHS5gZWhWoTSP6" },
             { name: "Temple Goshuin Map", url: "https://www.kodaiji.com/goshuinmap.pdf" }
@@ -151,7 +155,7 @@ export const day5Data = {
           photoSpots: ["Zen meditation gardens", "Traditional tea house", "Autumn maple trees", "Stone lanterns"],
           coordinates: { lat: 35.0015, lng: 135.7806 },
           description: "Serene temple with meditation gardens and traditional architecture",
-          hours: "12:30-13:00",
+          hours: "16:30-17:00",
           links: [
             { name: "Entoku-in Temple", url: "https://maps.app.goo.gl/bQYfEFnzQpVgixQ16" },
             { name: "Temple Site", url: "https://www.kodaiji.com/entoku-in/index.html" }
@@ -168,7 +172,7 @@ export const day5Data = {
           photoSpots: ["Massive temple gates", "Grand temple halls", "Traditional architecture", "Temple complex views"],
           coordinates: { lat: 35.0078, lng: 135.7847 },
           description: "One of Kyoto's largest temple complexes with impressive architecture",
-          hours: "14:30-15:15",
+          hours: "17:00-17:45",
           links: [
             { name: "Chion-in Temple", url: "https://maps.app.goo.gl/d8B51tkW2NAa6M18A" },
             { name: "Temple Goshuin Info", url: "https://www.chion-in.or.jp/en/guide/goshuin.php" }
@@ -185,7 +189,7 @@ export const day5Data = {
           photoSpots: ["Temple gardens", "Traditional halls", "Meditation spaces", "Peaceful courtyards"],
           coordinates: { lat: 35.0108, lng: 135.7841 },
           description: "Beautiful temple complex with traditional Japanese gardens",
-          hours: "15:15-16:00",
+          hours: "17:45-18:30",
           links: [
             { name: "Shoren-in Temple", url: "https://maps.app.goo.gl/CxiUdNc2jsqx8pme6" },
             { name: "Temple Site", url: "https://www.shorenin.com/" }
