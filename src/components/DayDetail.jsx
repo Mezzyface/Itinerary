@@ -113,6 +113,27 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
                       {activity.confirmationCode && (
                         <div>🔐 <span className="text-yellow-400">{activity.confirmationCode}</span></div>
                       )}
+                      {activity.links && activity.links.length > 0 && (
+                        <div className="mt-2 pt-2 border-t border-yellow-500/20">
+                          <div className="text-shiba-accent text-xs mb-1">🔗 Links:</div>
+                          <div className="space-y-1">
+                            {activity.links.map((link, linkIndex) => (
+                              <div key={linkIndex} className="font-mono text-xs">
+                                <span className="text-gray-500">$ </span>
+                                <span className="text-blue-400">curl </span>
+                                <a 
+                                  href={link.url} 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="text-shiba-accent hover:text-shiba-accent-hover underline transition-colors"
+                                >
+                                  {link.name}
+                                </a>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
                     </div>
                   </div>
                 ))}

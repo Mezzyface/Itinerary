@@ -9,8 +9,8 @@ export const sampleTripData = {
     budget: {
       totalBudget: "¥30,000",
       currency: "JPY",
-      spent: "¥15,900",
-      remaining: "¥14,100"
+      spent: "¥16,550",
+      remaining: "¥13,450"
     }
   },
   days: [
@@ -38,6 +38,18 @@ export const sampleTripData = {
         totalCost: "$106.02"
       },
       mandatoryActivities: [
+        {
+          id: "airport-transport",
+          time: "13:00",
+          title: "✈️ Travel from Haneda Airport",
+          duration: "45-60 minutes",
+          location: "Haneda Airport → Ebisu Station",
+          status: "upcoming",
+          notes: "Train route to Ebisu Station, then 4 min walk to Airbnb",
+          links: [
+            { name: "Route Details", url: "https://japantravel.navitime.com/en/area/jp/route/result/?start=00000592&goal=%7B%27lat%27%3A35.646584%2C%27lon%27%3A139.710153%2C%27spot%27%3A%2702011-00002025%27%7D&start_name=Haneda%20Airport(Tokyo)&goal_name=Ebisu(Tokyo)&cid=&from=route_top_search_box&ferry=false&taxi=false" }
+          ]
+        },
         {
           id: "airbnb-checkin",
           time: "16:00",
@@ -137,12 +149,12 @@ export const sampleTripData = {
       photoSpots: [],
       budget: {
         dailyBudget: "¥15,000",
-        spent: "¥15,900",
+        spent: "¥16,550",
         breakdown: {
           accommodation: "¥15,900",
           activities: "¥0.00",
           food: "¥0.00",
-          transport: "¥0.00"
+          transport: "¥650"
         }
       }
     },
