@@ -2,7 +2,7 @@
   "name": "Trip Itinerary Terminal",
   "short_name": "TripTerm", 
   "description": "OLED-optimized travel planning with serene Shiba Inu aesthetics",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#dc6d6c",
@@ -10,10 +10,10 @@
   "categories": ["travel", "productivity", "utilities"],
   "lang": "en-US",
   "dir": "ltr",
-  "scope": "/",
+  "scope": "./",
   "icons": [
     {
-      "src": "/vite.svg",
+      "src": "./vite.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
@@ -24,13 +24,13 @@
       "name": "Trip Overview",
       "short_name": "Overview", 
       "description": "View complete trip overview",
-      "url": "/"
+      "url": "./"
     }
   ],
   "related_applications": [
     {
       "platform": "web",
-      "url": "https://your-username.github.io/trip-itinerary/"
+      "url": "https://mezzyface.github.io/Itinerary/"
     }
   ],
   "prefer_related_applications": false,

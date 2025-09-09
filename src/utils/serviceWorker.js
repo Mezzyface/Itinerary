@@ -3,7 +3,9 @@
 export const registerServiceWorker = () => {
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
+      // Use relative path to work with GitHub Pages subdirectory
+      const swPath = import.meta.env.BASE_URL + 'sw.js'
+      navigator.serviceWorker.register(swPath)
         .then((registration) => {
           console.log('[App] ServiceWorker registration successful:', registration.scope)
           
