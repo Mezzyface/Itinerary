@@ -42,87 +42,9 @@ export const sampleTripData = {
           confirmationCode: "HMRDDYA2N4"
         }
       ],
-      timeBlocks: [
-        {
-          id: "afternoon-block",
-          timeRange: "17:00 - 20:00",
-          title: "🌃 Shibuya Exploration",
-          options: [
-            {
-              title: "🚶‍♂️ Shibuya Crossing Experience",
-              duration: "1 hour",
-              cost: "¥0",
-              photoSpots: ["Famous crossing", "Sky view", "Hachiko statue"],
-              coordinates: { lat: 35.6598, lng: 139.7006 }
-            },
-            {
-              title: "🛍️ Center Gai Shopping", 
-              duration: "2 hours",
-              cost: "¥2000-5000",
-              photoSpots: ["Neon lights", "Street fashion", "Arcade games"],
-              coordinates: { lat: 35.6617, lng: 139.6980 }
-            },
-            {
-              title: "🍜 Ebisu Ramen Tour",
-              duration: "2 hours", 
-              cost: "¥1500",
-              photoSpots: ["Authentic ramen shops", "Local atmosphere", "Food shots"],
-              coordinates: { lat: 35.6464, lng: 139.7103 }
-            }
-          ]
-        },
-        {
-          id: "evening-block",
-          timeRange: "20:00 - 23:00",
-          title: "🌙 Tokyo Nightlife",
-          options: [
-            {
-              title: "🍻 Shibuya Izakaya Experience",
-              duration: "2.5 hours",
-              cost: "¥3000",
-              photoSpots: ["Traditional pub", "Local crowd", "Japanese dishes"],
-              coordinates: { lat: 35.6580, lng: 139.7016 }
-            },
-            {
-              title: "🎤 Karaoke in Shibuya", 
-              duration: "2 hours",
-              cost: "¥2500",
-              photoSpots: ["Karaoke booth", "Group fun", "Tokyo night views"],
-              coordinates: { lat: 35.6598, lng: 139.7006 }
-            },
-            {
-              title: "🌃 Tokyo Tower Night View",
-              duration: "3 hours", 
-              cost: "¥3000",
-              photoSpots: ["Tokyo skyline", "Tower illumination", "City panorama"],
-              coordinates: { lat: 35.6586, lng: 139.7454 }
-            }
-          ]
-        }
-      ],
+      timeBlocks: [],
       transportation: [],
-      photoSpots: [
-        {
-          name: "🚶‍♂️ Shibuya Crossing",
-          coordinates: { lat: 35.6598, lng: 139.7006 },
-          description: "World's busiest pedestrian crossing, best shots from sky view"
-        },
-        {
-          name: "🐕 Hachiko Statue",
-          coordinates: { lat: 35.6590, lng: 139.7005 }, 
-          description: "Famous loyal dog statue, perfect for tourist photos"
-        },
-        {
-          name: "🌃 Shibuya Sky",
-          coordinates: { lat: 35.6585, lng: 139.7016 },
-          description: "Rooftop observation deck with panoramic Tokyo views"
-        },
-        {
-          name: "🍜 Ebisu Food Scene",
-          coordinates: { lat: 35.6464, lng: 139.7103 },
-          description: "Authentic local restaurants and street food"
-        }
-      ]
+      photoSpots: []
     },
     {
       id: "day-2",
