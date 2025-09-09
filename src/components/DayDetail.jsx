@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ThemeToggle from './ThemeToggle'
 
 const DayDetail = ({ dayData, onBackToOverview }) => {
   const [expandedTimeBlock, setExpandedTimeBlock] = useState(null)
@@ -33,12 +34,15 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
               </div>
               <div className="shiba-text-muted text-sm ml-4 font-mono">day-detail@shiba:~</div>
             </div>
-            <button
-              onClick={onBackToOverview}
-              className="shiba-btn-secondary text-sm"
-            >
-              ← back
-            </button>
+            <div className="flex items-center space-x-2">
+              <button
+                onClick={onBackToOverview}
+                className="shiba-btn-secondary text-sm"
+              >
+                ← back
+              </button>
+              <ThemeToggle />
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ThemeToggle from './ThemeToggle'
 
 const TripOverview = ({ tripData, onDaySelect }) => {
   return (
@@ -6,13 +7,16 @@ const TripOverview = ({ tripData, onDaySelect }) => {
       <div className="container mx-auto px-4 py-6">
         {/* Shiba Terminal Header */}
         <div className="shiba-window rounded-t-lg p-3 mb-0">
-          <div className="flex items-center space-x-2">
-            <div className="flex space-x-2">
-              <div className="w-3 h-3 bg-red-400 rounded-full shadow-sm"></div>
-              <div className="w-3 h-3 bg-yellow-400 rounded-full shadow-sm"></div>
-              <div className="w-3 h-3 bg-green-400 rounded-full shadow-sm"></div>
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 bg-red-400 rounded-full shadow-sm"></div>
+                <div className="w-3 h-3 bg-yellow-400 rounded-full shadow-sm"></div>
+                <div className="w-3 h-3 bg-green-400 rounded-full shadow-sm"></div>
+              </div>
+              <div className="shiba-text-muted text-sm ml-4 font-mono">trip-itinerary@shiba:~</div>
             </div>
-            <div className="shiba-text-muted text-sm ml-4 font-mono">trip-itinerary@shiba:~</div>
+            <ThemeToggle />
           </div>
         </div>
 

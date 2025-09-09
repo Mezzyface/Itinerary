@@ -1,6 +1,7 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import './styles/shiba-theme.css'
 import App from './App.jsx'
 import { registerServiceWorker, initializeNetworkStatus } from './utils/serviceWorker.js'
 import { initializeOLEDOptimizations } from './utils/oledOptimizer.js'
