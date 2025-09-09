@@ -44,11 +44,11 @@ export const sampleTripData = {
         {
           id: "airbnb-checkout", 
           time: "10:00",
-          title: "🎒 Checkout & Departure",
+          title: "🎒 Checkout & Departure (Nov 27)",
           duration: "30 minutes", 
           location: "HJ SHIBUYA b01",
           status: "upcoming",
-          notes: "Checkout by 10:00 AM, leave keys in lockbox",
+          notes: "Checkout by 10:00 AM on November 27th, leave keys in lockbox",
           confirmationCode: "HMRDDYA2N4"
         }
       ],
