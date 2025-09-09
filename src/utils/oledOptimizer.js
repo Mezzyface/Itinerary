@@ -70,12 +70,23 @@ export class OLEDOptimizer {
 
     const root = document.documentElement
     
-    // Apply OLED-specific CSS variables
+    // Apply OLED-specific CSS variables - TRUE BLACKS ONLY
     const oledVariables = {
-      '--shiba-bg-primary': 'rgb(0, 0, 0)',
-      '--shiba-bg-secondary': 'rgb(0, 0, 0)',
-      '--shiba-terminal-bg': 'rgb(0, 0, 0)',
-      '--shiba-glass-bg': 'rgba(0, 0, 0, 0.98)',
+      '--shiba-bg-primary': '#000000',
+      '--shiba-bg-secondary': '#000000',
+      '--shiba-bg-tertiary': '#000000',
+      '--shiba-terminal-bg': '#000000',
+      '--shiba-terminal-window': '#000000',
+      '--shiba-glass-bg': '#000000',
+      '--shiba-bg-translucent': 'rgba(0, 0, 0, 0.95)',
+      '--shiba-bg-translucent-light': 'rgba(0, 0, 0, 0.8)',
+      // Remove all shadows for OLED
+      '--shiba-shadow': 'none',
+      '--shiba-shadow-subtle': 'none',
+      '--shiba-shadow-s': 'none',
+      '--shiba-shadow-l': 'none',
+      '--shiba-input-shadow': 'none',
+      '--shiba-input-shadow-hover': 'none',
     }
 
     // Enhanced contrast for OLED
