@@ -2,22 +2,23 @@
 import { day1Data } from './day1Data.js';
 import { day2Data } from './day2Data.js';
 import { day3Data } from './day3Data.js';
+import { day4Data } from './day4Data.js';
 
 export const sampleTripData = {
   tripInfo: {
-    title: "Tokyo Shibuya Experience → Mount Fuji Adventure",
+    title: "Tokyo Shibuya → Mount Fuji → Camping Adventure",
     startDate: "2025-11-26",
-    endDate: "2025-11-29", 
+    endDate: "2025-11-30", 
     travelers: ["User"],
     coverImage: "/images/tokyo-cover.jpg",
     budget: {
-      totalBudget: "¥70,000",
+      totalBudget: "¥80,000",
       currency: "JPY",
-      spent: "¥61,380",
-      remaining: "¥8,620"
+      spent: "¥68,880",
+      remaining: "¥11,120"
     }
   },
-  days: [day1Data, day2Data, day3Data],
+  days: [day1Data, day2Data, day3Data, day4Data],
   integrations: {
     weather: {
       api: "OpenWeatherMap",
