@@ -27,99 +27,37 @@ export const day15Data = {
     ]
   },
   dayPlan: [
-    "Morning visit to Meiji Shrine and Harajuku",
-    "Explore Shibuya Crossing and Center Gai",
-    "Afternoon in Akihabara electronic district",
-    "Evening in Golden Gai or Robot Restaurant"
+    "Evening visit to Janai Coffee speakeasy"
   ],
   mandatoryActivities: [
     {
-      id: "meiji-shrine",
-      title: "Meiji Shrine Visit",
-      time: "9:00 AM",
-      location: "Shibuya, Tokyo",
-      duration: "1.5 hours",
+      id: "janai-coffee",
+      title: "Janai Coffee Speakeasy Visit",
+      time: "7:00 PM",
+      location: "Tokyo",
+      duration: "2 hours",
       status: "upcoming",
-      notes: "Tokyo's most important shrine, peaceful forest setting in the city"
-    },
-    {
-      id: "shibuya-crossing",
-      title: "Shibuya Crossing Experience",
-      time: "11:30 AM",
-      location: "Shibuya Station",
-      duration: "1 hour",
-      status: "upcoming",
-      notes: "World's busiest pedestrian crossing, iconic Tokyo experience"
+      notes: "Hidden coffee bar speakeasy with unique atmosphere"
     }
   ],
   timeBlocks: [
     {
-      id: "harajuku-culture",
-      title: "Harajuku Pop Culture District",
-      timeRange: "10:00 AM - 12:00 PM",
+      id: "evening-entertainment",
+      title: "Janai Coffee Speakeasy",
+      timeRange: "7:00 PM - 9:00 PM",
       options: [
         {
-          title: "Takeshita Street Shopping",
+          title: "Janai Coffee Speakeasy",
           duration: "2 hours",
           cost: "¥3,000",
-          description: "Youth culture epicenter with quirky fashion and snacks",
-          notes: "Best on weekends for people watching and street fashion"
-        },
-        {
-          title: "Omotesando Hills Upscale Shopping",
-          duration: "1.5 hours",
-          cost: "Window shopping",
-          description: "Luxury shopping with modern architecture",
-          notes: "More sophisticated alternative to Takeshita Street"
-        }
-      ]
-    },
-    {
-      id: "akihabara-tech",
-      title: "Akihabara Electronics & Anime District",
-      timeRange: "2:00 PM - 5:00 PM",
-      options: [
-        {
-          title: "Full Akihabara Experience",
-          duration: "3 hours",
-          cost: "¥2,500",
-          description: "Electronics shops, anime stores, manga cafes, arcades",
-          notes: "Paradise for tech and anime enthusiasts",
-          photoSpots: ["Akihabara Main Street", "Giant electronic billboards", "Vintage arcade machines"]
-        },
-        {
-          title: "Maid Cafe Cultural Experience",
-          duration: "1 hour",
-          cost: "¥2,000",
-          description: "Unique Japanese pop culture phenomenon",
-          notes: "Cultural curiosity rather than typical tourist activity"
-        }
-      ]
-    },
-    {
-      id: "evening-entertainment",
-      title: "Tokyo Nightlife Experience",
-      timeRange: "7:00 PM - 10:00 PM",
-      options: [
-        {
-          title: "Golden Gai Bar Hopping",
-          duration: "3 hours",
-          cost: "¥5,000",
-          description: "Tiny themed bars in historic alley district",
-          notes: "Atmospheric drinking quarter with character bars",
+          description: "Hidden coffee bar speakeasy with unique atmosphere",
+          notes: "Secret coffee speakeasy - perfect for evening drinks",
           links: [
             {
-              name: "Golden Gai Guide",
-              url: "https://www.shinjuku-goldengai.com/"
+              name: "Janai Coffee",
+              url: "https://janaicoffee.tokyo/"
             }
           ]
-        },
-        {
-          title: "Robot Restaurant Show",
-          duration: "2 hours",
-          cost: "¥8,000",
-          description: "Over-the-top robot and laser light entertainment",
-          notes: "Uniquely Japanese spectacle - book in advance"
         }
       ]
     }

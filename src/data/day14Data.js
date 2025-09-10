@@ -30,7 +30,7 @@ export const day14Data = {
     "Morning checkout from Hiroshima guesthouse",
     "Shinkansen journey back to Tokyo",
     "Afternoon check-in to Shinjuku accommodation",
-    "Evening exploration of Shinjuku district"
+    "Evening OpenBook Tokyo visit"
   ],
   mandatoryActivities: [
     {
@@ -76,23 +76,25 @@ export const day14Data = {
       ]
     },
     {
-      id: "shinjuku-orientation",
-      title: "Shinjuku District Orientation",
-      timeRange: "4:00 PM - 8:00 PM",
+      id: "openbook-tokyo-evening",
+      title: "OpenBook Tokyo Cultural Experience",
+      timeRange: "7:00 PM - 9:00 PM",
       options: [
         {
-          title: "Shinjuku Walking Tour",
-          duration: "3 hours",
-          cost: "Free",
-          description: "Explore major areas: East/South/West exits, Kabukicho, Golden Gai preview",
-          notes: "Get oriented with the massive station complex and districts"
-        },
-        {
-          title: "Shinjuku Gyoen Park Visit",
+          title: "Complete OpenBook Experience",
           duration: "2 hours",
-          cost: "¥500",
-          description: "Peaceful garden retreat from city bustle",
-          notes: "Perfect for jet lag recovery and relaxation"
+          cost: "Free entry + purchases",
+          description: "Explore this unique bookstore and cultural space that combines literature, art, and community",
+          notes: "OpenBook Tokyo is more than a bookstore - it's a cultural hub with curated books, events, and creative atmosphere",
+          photoSpots: ["Unique book displays", "Art installations", "Cultural space interior"],
+          coordinates: { lat: 35.6598, lng: 139.7007 },
+          breakdown: {
+            "Books/Items": "¥2,000-5,000 (optional)"
+          },
+          links: [{
+            name: "OpenBook Tokyo About",
+            url: "https://www.openbook.tokyo/pages/about"
+          }]
         }
       ]
     }
@@ -111,7 +113,13 @@ export const day14Data = {
       },
       duration: "3 hours 54 minutes",
       cost: "¥19,440",
-      notes: "Transfer to JR Yamanote Line to Shinjuku (15 mins)"
+      notes: "Transfer to JR Yamanote Line to Shinjuku (15 mins)",
+      links: [
+        { 
+          name: "Hiroshima to Shinjuku Route", 
+          url: "https://japantravel.navitime.com/en/area/jp/route/result/?start=00002397&goal=00004254&start_name=Hiroshima&goal_name=Shinjuku&cid=&from=route_top_search_box&date_time=2025-12-05T10%3A00"
+        }
+      ]
     }
   ]
 };
