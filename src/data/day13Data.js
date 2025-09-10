@@ -1,22 +1,30 @@
 export const day13Data = {
   id: 13,
-  title: "Hiroshima Peace Memorial & Miyajima Island",
-  date: "2025-12-07",
-  city: "Hiroshima",
+  title: "Tokyo Return & Shinjuku Exploration",
+  date: "2025-12-08",
+  city: "Tokyo",
   country: "Japan",
-  overview: "Visit Peace Memorial Park and iconic Itsukushima Shrine on Miyajima Island",
+  overview: "Travel from Hiroshima to Tokyo Shinjuku and begin final Tokyo exploration",
   weather: {
     icon: "☀️",
-    temp: "12°C",
+    temp: "54°F",
     condition: "Clear"
   },
   accommodations: {
-    checkIn: "Already checked in",
-    checkOut: "10:00 AM (Dec 8)",
-    links: [{
-      name: "Hiroshima City Center Guesthouse ROOM3",
-      url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMT2E4C89P"
-    }]
+    name: "Apartment in Shinjuku",
+    address: "Shinjuku, Tokyo, Japan",
+    checkIn: "December 8, after 3:00 PM",
+    checkOut: "December 11, before 11:00 AM",
+    confirmationCode: "HM5S8ARHRQ",
+    host: "Tokyo Host",
+    notes: "Apartment in Shinjuku, Tokyo. Staying night of December 8.",
+    totalCost: "Included in Airbnb booking",
+    guestDetails: {
+      guests: "1 guest"
+    },
+    links: [
+      { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ" }
+    ]
   },
   dayPlan: [
     "Morning visit to Peace Memorial Park and Museum",

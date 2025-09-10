@@ -1,22 +1,30 @@
 export const day11Data = {
   id: 11,
-  title: "Fukuoka City Exploration",
-  date: "2025-12-05",
-  city: "Fukuoka",
+  title: "Travel to Hiroshima & Peace Memorial",
+  date: "2025-12-06",
+  city: "Hiroshima",
   country: "Japan",
-  overview: "Full day exploring Fukuoka's cultural sites, food scene, and modern attractions",
+  overview: "Travel from Fukuoka to Hiroshima, visit Peace Memorial Park and explore historic Hiroshima",
   weather: {
     icon: "☀️",
-    temp: "15°C", 
+    temp: "59°F", 
     condition: "Sunny"
   },
   accommodations: {
-    checkIn: "Already checked in",
-    checkOut: "11:00 AM (Dec 6)",
-    links: [{
-      name: "Hakata Base The Passage 2号",
-      url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMMK8QPSFC"
-    }]
+    name: "Apartment in Hiroshima",
+    address: "Hiroshima, Japan",
+    checkIn: "December 6, after 3:00 PM",
+    checkOut: "December 8, before 11:00 AM",
+    confirmationCode: "HMT2E4C89P",
+    host: "Hiroshima Host",
+    notes: "Apartment in Hiroshima. Staying night of December 6.",
+    totalCost: "Included in Airbnb booking",
+    guestDetails: {
+      guests: "1 guest"
+    },
+    links: [
+      { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMT2E4C89P" }
+    ]
   },
   dayPlan: [
     "Morning visit to Kushida Shrine",

@@ -18,15 +18,15 @@ export const day2Data = {
     "20:00 - Check into traditional ryokan with Fuji views"
   ],
   weather: {
-    temp: "10-17°C (50-63°F)",
+    temp: "50-63°F",
     condition: "Cool autumn weather", 
     icon: "☀️"
   },
   accommodations: {
     name: "Traditional experience with best Fuji view! Aoiso (あおい荘)",
     address: "富士河口湖町小立1297-1 あおい荘, 南都留郡, 山梨県 401-0302, Japan",
-    checkIn: "Thu, Nov 27, 3:00 PM",
-    checkOut: "Sat, Nov 29, 10:00 AM",
+    checkIn: "November 27, after 3:00 PM",
+    checkOut: "November 29, before 10:00 AM",
     confirmationCode: "HMKCYQKHZZ",
     host: "Shogo (Former Fuji climbing guide & ski instructor)",
     notes: "Traditional accommodation with best Mount Fuji views, home away from home experience. Host greets you for check-in.",

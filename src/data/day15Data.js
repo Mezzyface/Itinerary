@@ -1,22 +1,30 @@
 export const day15Data = {
   id: 15,
   title: "Tokyo Modern Districts & Culture",
-  date: "2025-12-09",
+  date: "2025-12-10",
   city: "Tokyo",
   country: "Japan",
   overview: "Explore Tokyo's modern districts, technology, and pop culture scenes",
   weather: {
     icon: "☀️",
-    temp: "10°C",
+    temp: "50°F",
     condition: "Clear"
   },
   accommodations: {
-    checkIn: "Already checked in",
-    checkOut: "10:00 AM (Dec 11)",
-    links: [{
-      name: "Shinjuku Private Room near Gyoen",
-      url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ"
-    }]
+    name: "Apartment in Shinjuku",
+    address: "Shinjuku, Tokyo, Japan",
+    checkIn: "December 8, after 3:00 PM",
+    checkOut: "December 11, before 11:00 AM",
+    confirmationCode: "HM5S8ARHRQ",
+    host: "Tokyo Host",
+    notes: "Apartment in Shinjuku, Tokyo. Staying night of December 10.",
+    totalCost: "Included in Airbnb booking",
+    guestDetails: {
+      guests: "1 guest"
+    },
+    links: [
+      { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ" }
+    ]
   },
   dayPlan: [
     "Morning visit to Meiji Shrine and Harajuku",

@@ -18,19 +18,19 @@ export const day8Data = {
     "20:00 - Evening entertainment in Dotonbori"
   ],
   weather: {
-    temp: "8-15°C (46-59°F)",
+    temp: "46-59°F",
     condition: "Cool December weather, perfect for sightseeing", 
     icon: "🌤️"
   },
   accommodations: {
     name: "Capsule Hotel Asahi Plaza Shinsaibashi",
     address: "2-chōme-12-22 Nishishinsaibashi, Chuo Ward, Osaka, Osaka 542-0086, Japan",
-    checkIn: "Continuing stay from December 2",
-    checkOut: "December 4, 10:00 AM (tomorrow)",
+    checkIn: "December 2, after 3:00 PM",
+    checkOut: "December 4, checkout",
     confirmationCode: "HMK2TXC8PM",
     host: "カプセルホテル朝日プラザ心斎橋",
-    notes: "Second night at capsule hotel in Shinsaibashi. Familiar with facilities and area.",
-    totalCost: "Included in $47.64 booking",
+    notes: "Men's only capsule hotel in heart of Shinsaibashi entertainment district. Staying night of December 3.",
+    totalCost: "$47.64",
     guestDetails: {
       guests: "1 guest (men's only facility)"
     },

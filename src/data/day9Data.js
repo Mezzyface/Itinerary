@@ -4,149 +4,124 @@
 export const day9Data = {
   id: "day-9",
   date: "2025-12-04",
-  title: "Osaka Departure Day",
+  title: "OpenBook Tokyo Evening",
   city: "Osaka",
   country: "Japan", 
   coordinates: { lat: 34.6937, lng: 135.5023 },
-  overview: "✈️ Final day in Japan! Leisurely morning in Osaka, capsule hotel checkout, and departure preparations. Last chance for souvenir shopping and favorite Japanese experiences.",
+  overview: "Evening visit to OpenBook Tokyo, a unique bookstore and cultural space in Shibuya",
   dayPlan: [
-    "08:00 - Final Japanese breakfast",
-    "10:00 - Checkout from capsule hotel",
-    "11:00 - Last-minute souvenir shopping",
-    "13:00 - Final meal in Japan",
-    "15:00 - Departure preparations",
-    "Evening - Travel to airport or next destination"
+    "Relaxed day in Osaka",
+    "Evening travel to Tokyo",
+    "Visit OpenBook Tokyo in Shibuya",
+    "Explore bookstore and cultural space"
   ],
   weather: {
-    temp: "8-15°C (46-59°F)",
+    temp: "46-59°F",
     condition: "Cool December morning, good for final exploration", 
     icon: "🌤️"
   },
   accommodations: {
-    name: "Capsule Hotel Asahi Plaza Shinsaibashi",
-    address: "2-chōme-12-22 Nishishinsaibashi, Chuo Ward, Osaka, Osaka 542-0086, Japan",
-    checkIn: "Concluding stay from December 2",
-    checkOut: "December 4, 10:00 AM (TODAY)",
-    confirmationCode: "HMK2TXC8PM",
-    host: "カプセルホテル朝日プラザ心斎橋",
-    notes: "Final checkout from unique capsule hotel experience. Ensure all belongings packed.",
-    totalCost: "$47.64 (completed stay)",
+    name: "House in Hakata Ward",
+    address: "Hakata Ward, Fukuoka, Japan",
+    checkIn: "December 4, after 3:00 PM",
+    checkOut: "December 6, before 11:00 AM",
+    confirmationCode: "HMMK8QPSFC",
+    host: "Fukuoka Host",
+    notes: "House in Hakata Ward, Fukuoka. Staying night of December 4.",
+    totalCost: "Included in Airbnb booking",
     guestDetails: {
-      guests: "1 guest (men's only facility)"
+      guests: "1 guest"
     },
     links: [
-      { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMK2TXC8PM" }
+      { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMMK8QPSFC" }
     ]
   },
   mandatoryActivities: [
     {
-      id: "capsule-hotel-checkout",
-      time: "10:00",
-      title: "🏨 Final Hotel Checkout",
-      duration: "30 minutes",
-      location: "Capsule Hotel Asahi Plaza",
+      id: "openbook-tokyo-visit",
+      time: "7:00 PM",
+      title: "OpenBook Tokyo Visit",
+      duration: "2 hours",
+      location: "Shibuya, Tokyo",
       status: "upcoming",
-      notes: "Complete checkout from capsule hotel. Ensure all belongings packed and nothing left behind.",
-      confirmationCode: "HMK2TXC8PM"
+      notes: "Visit OpenBook Tokyo - unique bookstore and cultural space combining books, art, and community",
+      links: [{
+        name: "OpenBook Tokyo",
+        url: "https://www.openbook.tokyo/pages/about"
+      }]
     }
   ],
   timeBlocks: [
     {
-      id: "final-breakfast",
-      timeRange: "08:00 - 09:30",
-      title: "🍱 Final Japanese Breakfast",
+      id: "openbook-tokyo-experience",
+      timeRange: "7:00 PM - 9:00 PM",
+      title: "OpenBook Tokyo Cultural Experience",
       options: [
         {
-          title: "🍱 Traditional Japanese Breakfast",
-          duration: "1.5 hours",
-          cost: "¥1,000-1,500",
-          photoSpots: ["Traditional breakfast setup", "Final meal photos", "Local morning atmosphere"],
-          coordinates: { lat: 34.6721, lng: 135.5016 },
-          description: "Enjoy a final traditional Japanese breakfast before departure",
-          hours: "08:00-09:30",
+          title: "Complete OpenBook Experience",
+          duration: "2 hours",
+          cost: "Free entry + purchases",
+          description: "Explore this unique bookstore and cultural space that combines literature, art, and community",
+          notes: "OpenBook Tokyo is more than a bookstore - it's a cultural hub with curated books, events, and creative atmosphere",
+          photoSpots: ["Unique book displays", "Art installations", "Cultural space interior"],
+          coordinates: { lat: 35.6598, lng: 139.7007 },
           breakdown: {
-            "Breakfast": "¥1,000-1,500"
+            "Books/Items": "¥2,000-5,000 (optional)"
           },
-          notes: "Savor last authentic Japanese meal - perfect reflection on your journey"
-        }
-      ]
-    },
-    {
-      id: "final-shopping",
-      timeRange: "11:00 - 13:00",
-      title: "🛍️ Final Souvenir Shopping",
-      options: [
-        {
-          title: "🛍️ Last-Minute Souvenir Hunt",
-          duration: "2 hours", 
-          cost: "¥3,000-8,000",
-          photoSpots: ["Final purchases", "Souvenir displays", "Shopping memories"],
-          coordinates: { lat: 34.6721, lng: 135.5016 },
-          description: "Final opportunity for souvenir shopping in Shinsaibashi area before departure",
-          hours: "11:00-13:00",
-          breakdown: {
-            "Souvenirs/Gifts": "¥3,000-8,000"
-          },
-          notes: "Last chance for unique Japanese items, local snacks, or forgot to buy gifts"
-        }
-      ]
-    },
-    {
-      id: "farewell-meal",
-      timeRange: "13:00 - 14:30",
-      title: "🍜 Farewell Meal",
-      options: [
-        {
-          title: "🍜 Final Japanese Meal",
-          duration: "1.5 hours",
-          cost: "¥2,000-3,500",
-          photoSpots: ["Final meal", "Restaurant atmosphere", "Last food memories"],
-          coordinates: { lat: 34.6721, lng: 135.5016 },
-          description: "Memorable final meal in Japan - choose your favorite discovered cuisine",
-          hours: "13:00-14:30",
-          breakdown: {
-            "Final Meal": "¥2,000-3,500"
-          },
-          notes: "Perfect time to revisit your favorite Japanese dish from the trip"
+          links: [{
+            name: "OpenBook Tokyo About",
+            url: "https://www.openbook.tokyo/pages/about"
+          }]
         }
       ]
     }
   ],
   transportation: [
     {
-      id: "departure-transport",
+      provider: "JR",
+      type: "Shinkansen",
       departure: {
-        location: "Shinsaibashi/Osaka Center", 
-        time: "15:00+"
+        location: "Osaka",
+        time: "4:00 PM"
       },
       arrival: {
-        location: "Airport/Next Destination",
-        time: "Variable"
+        location: "Tokyo",
+        time: "6:30 PM"
       },
-      provider: "Various Options",
-      type: "Airport Express/Shinkansen",
-      duration: "1-3 hours depending on destination",
-      cost: "¥1,000-15,000",
-      notes: "Multiple departure options - Kansai Airport, Haneda/Narita, or domestic destinations",
-      links: [
-        { name: "Osaka to Airport Routes", url: "https://www.kansai-airport.or.jp/en/access/" }
-      ]
+      duration: "2.5 hours",
+      cost: "¥13,320",
+      notes: "Shinkansen to Tokyo, then local train to Shibuya for OpenBook visit"
+    },
+    {
+      provider: "JR Yamanote Line",
+      type: "Local train",
+      departure: {
+        location: "Tokyo Station",
+        time: "6:45 PM"
+      },
+      arrival: {
+        location: "Shibuya Station",
+        time: "7:00 PM"
+      },
+      duration: "15 minutes",
+      cost: "¥160",
+      notes: "Short ride to Shibuya for OpenBook Tokyo visit"
     }
   ],
   culturalTips: [
-    "✈️ Airport departure: Arrive 2-3 hours early for international flights",
-    "🎁 Souvenirs: Pack carefully to avoid luggage weight limits",
-    "💰 Remaining yen: Use at airport or convert back if needed",
-    "📱 Data/SIM: Return rental devices if applicable",
-    "🙏 Farewell customs: Simple bow and 'arigatou gozaimashita' (thank you very much)"
+    "📚 Bookstore etiquette: Browse quietly and respectfully",
+    "🎨 Cultural spaces: Take time to appreciate the curated atmosphere",
+    "📱 Photography: Ask permission before taking photos of displays",
+    "🛋️ Evening timing: Perfect time to explore without crowds",
+    "📝 Book selections: Many English books available alongside Japanese titles"
   ],
   importantNotes: [
-    "🏨 Checkout exactly at 10:00 AM from capsule hotel",
-    "🎒 Double-check all belongings - easy to forget items in capsule spaces",
-    "💰 Use remaining Japanese yen before departure",
-    "📱 Arrange transportation to airport/next destination in advance",
-    "🎁 Pack souvenirs carefully - some items may be restricted on flights",
-    "📋 Keep all receipts for tax refund if applicable",
-    "🙏 Reflect on amazing 9-day Japan adventure - you did it!"
+    "📚 OpenBook Tokyo combines bookstore with cultural events and art",
+    "🚆 Travel from Osaka in afternoon to arrive for evening visit",
+    "🌇 Perfect evening activity in Shibuya district",
+    "📚 Unique selection of books, magazines, and cultural items",
+    "🎨 Often features art installations and community events",
+    "🛋️ Less crowded in evening - more peaceful browsing experience",
+    "📍 Located in vibrant Shibuya area with nearby dining options"
   ]
 };

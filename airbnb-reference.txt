@@ -1,0 +1,62 @@
+AIRBNB RESERVATIONS - EXTRACTED FROM TEMP.HTML
+
+1. TOKYO SHIBUYA
+   - Confirmation: HMRDDYA2N4
+   - Type: Apartment in Shibuya
+   - Dates: November 26 – 27, 2025
+   - Address: 3-chōme-20-10 Higashi, Shibuya City, Tokyo Prefecture 150-0011, Japan
+   - Check-in: After 4:00 PM on November 26
+   - Note: Where you sleep November 26 night
+
+2. MOUNT FUJI RYOKAN  
+   - Confirmation: HMKCYQKHZZ
+   - Type: Ryokan in Minamitsuru District
+   - Dates: November 27 – 29, 2025
+   - Note: Where you sleep November 27 & November 28 nights
+
+3. KYOTO HOUSE
+   - Confirmation: HMCDYDAZEN
+   - Type: House in Nakagyo Ward
+   - Dates: November 29 – December 2, 2025
+   - Note: Where you sleep November 29, November 30, December 1 nights
+
+4. OSAKA HOTEL
+   - Confirmation: HMK2TXC8PM
+   - Type: Hotel in Chuo (Capsule Hotel)
+   - Dates: December 2 – 4, 2025
+   - Note: Where you sleep December 2 & December 3 nights
+
+5. FUKUOKA HOUSE
+   - Confirmation: HMMK8QPSFC
+   - Type: House in Hakata Ward
+   - Dates: December 4 – 6, 2025
+   - Note: Where you sleep December 4 & December 5 nights
+
+6. HIROSHIMA APARTMENT
+   - Confirmation: HMT2E4C89P
+   - Type: Apartment in Hiroshima
+   - Dates: December 6 – 8, 2025
+   - Note: Where you sleep December 6 & December 7 nights
+
+7. TOKYO SHINJUKU
+   - Confirmation: HM5S8ARHRQ
+   - Type: Apartment in Shinjuku
+   - Dates: December 8 – 11, 2025
+   - Note: Where you sleep December 8, December 9, December 10 nights
+
+ACCOMMODATION ASSIGNMENTS BY NIGHT:
+- November 26 night: Tokyo Shibuya (HMRDDYA2N4)
+- November 27 night: Mount Fuji Ryokan (HMKCYQKHZZ) 
+- November 28 night: Mount Fuji Ryokan (HMKCYQKHZZ)
+- November 29 night: Kyoto House (HMCDYDAZEN)
+- November 30 night: Kyoto House (HMCDYDAZEN)
+- December 1 night: Kyoto House (HMCDYDAZEN)
+- December 2 night: Osaka Hotel (HMK2TXC8PM)
+- December 3 night: Osaka Hotel (HMK2TXC8PM)
+- December 4 night: Fukuoka House (HMMK8QPSFC)
+- December 5 night: Fukuoka House (HMMK8QPSFC)
+- December 6 night: Hiroshima Apartment (HMT2E4C89P)
+- December 7 night: Hiroshima Apartment (HMT2E4C89P)
+- December 8 night: Tokyo Shinjuku (HM5S8ARHRQ)
+- December 9 night: Tokyo Shinjuku (HM5S8ARHRQ)
+- December 10 night: Tokyo Shinjuku (HM5S8ARHRQ)

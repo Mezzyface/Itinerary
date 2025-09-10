@@ -17,18 +17,18 @@ export const day1Data = {
     "20:00 - Dinner and drinks at local bars (A10 or Lost Bar)"
   ],
   weather: {
-    temp: "15°C",
+    temp: "59°F",
     condition: "Clear", 
     icon: "☀️"
   },
   accommodations: {
     name: "恵比寿駅から徒歩4分/渋谷駅まで徒歩圏内/家具家電付/HJ SHIBUYA b01",
     address: "3-chōme-20-10 Higashi, Shibuya City, Tokyo Prefecture 150-0011, Japan",
-    checkIn: "16:00",
-    checkOut: "10:00",
+    checkIn: "November 26, after 4:00 PM",
+    checkOut: "November 27, before 10:00 AM",
     confirmationCode: "HMRDDYA2N4",
     host: "ライワマンション", 
-    notes: "Self check-in with lockbox, 4 min walk from Ebisu Station",
+    notes: "Self check-in with lockbox, 4 min walk from Ebisu Station. Staying night of November 26.",
     totalCost: "$106.02",
     links: [
       { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMRDDYA2N4" }

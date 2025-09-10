@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ThemeToggle from './ThemeToggle'
+import WeatherDisplay from './WeatherDisplay'
 
 const TripOverview = ({ tripData, onDaySelect }) => {
   return (
@@ -87,11 +88,12 @@ const TripOverview = ({ tripData, onDaySelect }) => {
                         <span className="shiba-translucent px-2 py-1 rounded-full text-xs font-medium">
                           📅 {day.date}
                         </span>
-                        {day.weather && (
-                          <span className="shiba-translucent-light px-2 py-1 rounded-full text-xs border border-blue-400/20">
-                            {day.weather.icon} {day.weather.temp}
-                          </span>
-                        )}
+                        <WeatherDisplay 
+                          coordinates={day.coordinates}
+                          fallbackWeather={day.weather}
+                          date={day.date}
+                          variant="compact"
+                        />
                       </div>
                       
                       <div className="mb-3">

@@ -19,19 +19,19 @@ export const day6Data = {
     "17:00 - Final temple visits and departure preparation"
   ],
   weather: {
-    temp: "6-14°C (43-57°F)",
+    temp: "43-57°F",
     condition: "Cool morning, perfect for shrine exploration", 
     icon: "🌅"
   },
   accommodations: {
     name: "FreeBreakfast&WIFI*NEAR→Nijojo*CozyKoreanMom'sHome",
     address: "180 Jurakumawari Nishimachi, Nakagyō-ku, Kyōto-shi, Kyōto-fu 604-8402, Japan",
-    checkIn: "Continuing stay from November 30",
-    checkOut: "December 2, 11:00 AM (final checkout)",
+    checkIn: "November 29, after 3:00 PM",
+    checkOut: "December 2, before 11:00 AM",
     confirmationCode: "HMCDYDAZEN",
     host: "寧保 (Ningbao)",
-    notes: "Final day at cozy Korean mom's home near Nijo Castle. Free breakfast before dawn departure to Fushimi Inari. Local Kyoto tax ¥200 per night included.",
-    totalCost: "Included in $174.11 booking",
+    notes: "Cozy Korean mom's home near Nijo Castle with free breakfast & WiFi. Local Kyoto tax ¥200 per guest per night collected at check-in. Staying night of December 1.",
+    totalCost: "$174.11",
     guestDetails: {
       guests: "1 guest"
     },

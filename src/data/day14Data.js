@@ -1,22 +1,30 @@
 export const day14Data = {
   id: 14,
   title: "Return to Tokyo & Shinjuku Arrival",
-  date: "2025-12-08",
+  date: "2025-12-09",
   city: "Tokyo",
   country: "Japan",
   overview: "Travel from Hiroshima back to Tokyo and settle into Shinjuku accommodation",
   weather: {
     icon: "🌤️",
-    temp: "8°C",
+    temp: "46°F",
     condition: "Partly cloudy"
   },
   accommodations: {
-    checkIn: "3:00 PM",
-    checkOut: "10:00 AM (Dec 11)",
-    links: [{
-      name: "Shinjuku Private Room near Gyoen",
-      url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ"
-    }]
+    name: "Apartment in Shinjuku",
+    address: "Shinjuku, Tokyo, Japan",
+    checkIn: "December 8, after 3:00 PM",
+    checkOut: "December 11, before 11:00 AM",
+    confirmationCode: "HM5S8ARHRQ",
+    host: "Tokyo Host",
+    notes: "Apartment in Shinjuku, Tokyo. Staying night of December 9.",
+    totalCost: "Included in Airbnb booking",
+    guestDetails: {
+      guests: "1 guest"
+    },
+    links: [
+      { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ" }
+    ]
   },
   dayPlan: [
     "Morning checkout from Hiroshima guesthouse",

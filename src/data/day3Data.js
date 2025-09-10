@@ -18,15 +18,15 @@ export const day3Data = {
     "Evening - Traditional dinner and Mount Fuji views"
   ],
   weather: {
-    temp: "8-15°C (46-59°F)",
+    temp: "46-59°F",
     condition: "Clear skies ideal for Fuji views", 
     icon: "☀️"
   },
   accommodations: {
     name: "Traditional experience with best Fuji view! Aoiso (あおい荘)",
     address: "富士河口湖町小立1297-1 あおい荘, 南都留郡, 山梨県 401-0302, Japan",
-    checkIn: "Continuing stay",
-    checkOut: "Sat, Nov 29, 10:00 AM",
+    checkIn: "Continuing stay from November 27",
+    checkOut: "November 29, before 10:00 AM",
     confirmationCode: "HMKCYQKHZZ",
     host: "Shogo (Former Fuji climbing guide & ski instructor)",
     notes: "Second night stay at traditional accommodation with best Mount Fuji views. Traditional kaiseki dinner included.",

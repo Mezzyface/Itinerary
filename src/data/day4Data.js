@@ -18,7 +18,7 @@ export const day4Data = {
     "21:00 - Campfire and traditional outdoor experience"
   ],
   weather: {
-    temp: "5-12°C (41-54°F)",
+    temp: "41-54°F",
     condition: "Cool autumn weather, perfect for camping", 
     icon: "🌤️"
   },
@@ -29,7 +29,7 @@ export const day4Data = {
     checkOut: "Next morning departure",
     confirmationCode: "TENT112925",
     host: "Fujikawa Camp Management",
-    notes: "Tent site camping (7.5m×7.5m - 56㎡) for outdoor adventure experience. 1 night stay under the stars near Mount Fuji at authentic Japanese campground.",
+    notes: "Tent site camping (7.5m×7.5m - 56㎡) for outdoor adventure experience. 1 night stay under the stars near Mount Fuji at authentic Japanese campground. Staying night of November 29.",
     totalCost: "¥3,000-4,000",
     guestDetails: {
       name: "Henderson Adam",

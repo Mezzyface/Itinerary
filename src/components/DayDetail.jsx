@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ThemeToggle from './ThemeToggle'
+import WeatherDisplay from './WeatherDisplay'
 
 const DayDetail = ({ dayData, onBackToOverview }) => {
   const [expandedTimeBlock, setExpandedTimeBlock] = useState(null)
@@ -68,9 +69,14 @@ const DayDetail = ({ dayData, onBackToOverview }) => {
               <div className="shiba-text-accent space-y-1 mb-4">
                 <div>📍 {dayData.city}, {dayData.country}</div>
                 <div>🗓️ {dayData.date}</div>
-                {dayData.weather && (
-                  <div>{dayData.weather.icon} {dayData.weather.temp} - {dayData.weather.condition}</div>
-                )}
+              </div>
+              <div className="mb-4">
+                <WeatherDisplay 
+                  coordinates={dayData.coordinates}
+                  fallbackWeather={dayData.weather}
+                  date={dayData.date}
+                  variant="detailed"
+                />
               </div>
               <div className="shiba-text-secondary">{dayData.overview}</div>
             </div>

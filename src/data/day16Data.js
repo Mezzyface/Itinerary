@@ -1,13 +1,13 @@
 export const day16Data = {
   id: 16,
-  title: "Final Tokyo Day & Traditional Culture",
-  date: "2025-12-10",
+  title: "Small Worlds Tokyo & Airport Departure",
+  date: "2025-12-11",
   city: "Tokyo",
   country: "Japan",
-  overview: "Experience traditional Tokyo districts, final shopping, and reflection on the journey",
+  overview: "Visit Small Worlds Tokyo miniature museum in the morning, then head to the airport for departure",
   weather: {
     icon: "🌥️",
-    temp: "9°C",
+    temp: "48°F",
     condition: "Overcast"
   },
   accommodations: {
@@ -19,127 +19,138 @@ export const day16Data = {
     }]
   },
   dayPlan: [
-    "Morning visit to Senso-ji Temple in Asakusa",
-    "Traditional Tokyo neighborhoods exploration",
-    "Final souvenir shopping in Ginza or Shibuya",
-    "Farewell dinner at high-quality restaurant",
-    "Evening reflection and packing"
+    "Morning visit to Small Worlds Tokyo",
+    "Lunch near Ariake/Odaiba at 12:00 PM",
+    "Travel to Haneda Airport by 2:00 PM",
+    "4:25 PM departure to Austin via San Francisco (ANA NH 7010)",
+    "Arrive Austin 4:45 PM same day (time zones)"
   ],
   mandatoryActivities: [
     {
-      id: "sensoji-temple",
-      title: "Senso-ji Temple & Asakusa District",
-      time: "9:00 AM",
-      location: "Asakusa, Tokyo",
-      duration: "2.5 hours",
+      id: "small-worlds-tokyo",
+      title: "Small Worlds Tokyo",
+      time: "9:30 AM",
+      location: "Ariake, Tokyo (Odaiba)",
+      duration: "1.5 hours",
       status: "upcoming",
-      notes: "Tokyo's oldest temple (645 AD) - perfect way to end the journey with tradition"
-    },
-    {
-      id: "farewell-dinner",
-      title: "Farewell Dinner",
-      time: "7:00 PM",
-      location: "Shinjuku or Shibuya",
-      duration: "2 hours",
-      status: "upcoming",
-      notes: "Memorable final meal to celebrate the complete Japan adventure"
+      notes: "Amazing miniature world theme park - need to finish by 11:30 AM to make 4:25 PM flight",
+      links: [{
+        name: "Small Worlds Tokyo Official Site",
+        url: "https://smallworlds.jp/en/"
+      }]
     }
   ],
   timeBlocks: [
     {
-      id: "asakusa-traditional",
-      title: "Traditional Asakusa Experience",
-      timeRange: "9:00 AM - 12:30 PM",
+      id: "small-worlds-visit",
+      title: "Small Worlds Tokyo Experience",
+      timeRange: "9:30 AM - 11:00 AM",
       options: [
         {
-          title: "Complete Asakusa Cultural Tour",
-          duration: "3.5 hours",
+          title: "Complete Small Worlds Experience",
+          duration: "1.5 hours",
+          cost: "¥2,700 (Adult)",
+          description: "Explore the world's largest indoor miniature theme park with incredibly detailed dioramas",
+          notes: "Amazing attention to detail - miniature airports, cities, space center, and fantasy worlds",
+          photoSpots: ["Miniature Haneda Airport", "Space Center", "Global Village", "Fantasy worlds"],
+          links: [{
+            name: "Ticket Information",
+            url: "https://smallworlds.jp/en/ticket/"
+          }]
+        }
+      ]
+    },
+    {
+      id: "farewell-lunch",
+      title: "Final Tokyo Lunch",
+      timeRange: "12:00 PM - 1:00 PM",
+      options: [
+        {
+          title: "Aqua City Odaiba Food Court",
+          duration: "1 hour",
           cost: "¥1,500",
-          description: "Senso-ji Temple, Nakamise Shopping Street, traditional crafts, rickshaw ride",
-          notes: "Perfect contrast to modern Tokyo - shows Japan's traditional heart",
-          photoSpots: ["Thunder Gate (Kaminarimon)", "Five-story Pagoda", "Traditional shopping street"]
+          description: "Variety of Japanese restaurants with Tokyo Bay views",
+          notes: "Convenient location near Small Worlds with great view of Rainbow Bridge"
         },
         {
-          title: "Temple and Gardens Focus",
-          duration: "2 hours",
-          cost: "¥500",
-          description: "Peaceful temple grounds and traditional architecture",
-          notes: "More contemplative experience for final temple visit"
-        }
-      ]
-    },
-    {
-      id: "final-shopping",
-      title: "Final Souvenir Shopping",
-      timeRange: "2:00 PM - 5:00 PM",
-      options: [
-        {
-          title: "Ginza Luxury Shopping District",
-          duration: "3 hours",
-          cost: "¥5,000+",
-          description: "High-end department stores, traditional crafts, quality souvenirs",
-          notes: "Best for quality items and traditional Japanese goods"
+          title: "Palette Town Restaurant",
+          duration: "1 hour",
+          cost: "¥2,000",
+          description: "Sit-down restaurant with international and Japanese cuisine",
+          notes: "More relaxed atmosphere for final Tokyo meal"
         },
         {
-          title: "Shibuya & Harajuku Shopping",
-          duration: "3 hours", 
-          cost: "¥3,000",
-          description: "Pop culture items, trendy fashion, unique Tokyo souvenirs",
-          notes: "More eclectic and youth-oriented shopping experience"
-        },
-        {
-          title: "Tokyo Station Character Street",
-          duration: "2 hours",
-          cost: "¥2,500",
-          description: "Anime, manga, and character merchandise under Tokyo Station",
-          notes: "Convenient for departure day shopping"
-        }
-      ]
-    },
-    {
-      id: "farewell-dining",
-      title: "Memorable Farewell Dinner",
-      timeRange: "7:00 PM - 9:30 PM",
-      options: [
-        {
-          title: "High-End Sushi Experience",
-          duration: "2.5 hours",
-          cost: "¥12,000",
-          description: "Omakase sushi dinner to celebrate the complete journey",
-          notes: "Perfect way to end with Japan's most famous cuisine"
-        },
-        {
-          title: "Traditional Kaiseki Dinner",
-          duration: "2 hours",
-          cost: "¥8,000",
-          description: "Multi-course traditional Japanese fine dining",
-          notes: "Artistic presentation and seasonal ingredients"
-        },
-        {
-          title: "Local Izakaya Celebration",
-          duration: "2 hours",
-          cost: "¥4,000",
-          description: "Casual Japanese pub with variety of dishes and drinks",
-          notes: "More relaxed atmosphere for reflecting on the adventure"
+          title: "Convenience Store Bento",
+          duration: "30 minutes",
+          cost: "¥800",
+          description: "Quick grab-and-go option from nearby convenience store",
+          notes: "Budget-friendly and efficient if running behind schedule"
         }
       ]
     }
   ],
   transportation: [
     {
-      provider: "Tokyo Metro",
+      provider: "JR & Yurikamome Line",
       type: "Individual tickets",
       departure: {
         location: "Shinjuku",
         time: "8:30 AM"
       },
       arrival: {
-        location: "Asakusa",
-        time: "9:00 AM"
+        location: "Ariake (Small Worlds)",
+        time: "9:15 AM"
+      },
+      duration: "45 minutes",
+      cost: "¥400",
+      notes: "JR to Shimbashi, then Yurikamome Line to Ariake - scenic route over Tokyo Bay"
+    },
+    {
+      provider: "Limousine Bus",
+      type: "Airport express",
+      departure: {
+        location: "Ariake/Tokyo Big Sight",
+        time: "1:30 PM"
+      },
+      arrival: {
+        location: "Haneda Airport",
+        time: "2:00 PM"
       },
       duration: "30 minutes",
-      cost: "¥200",
-      notes: "Final day of Tokyo metro system - familiar by now"
+      cost: "¥600",
+      notes: "Direct bus from Odaiba area to Haneda after lunch - gives more time to relax"
+    },
+    {
+      provider: "ANA (All Nippon Airways)",
+      type: "International flight",
+      departure: {
+        location: "Tokyo Haneda Airport (HND)",
+        time: "4:25 PM"
+      },
+      arrival: {
+        location: "San Francisco Airport (SFO)",
+        time: "9:10 AM same day"
+      },
+      duration: "9h 45m",
+      cost: "Booked",
+      notes: "Flight NH 7010 (operated by United) - crosses date line, arrives same day local time",
+      confirmationCode: "NH 7010"
+    },
+    {
+      provider: "ANA (All Nippon Airways)",
+      type: "Domestic connection",
+      departure: {
+        location: "San Francisco Airport (SFO)",
+        time: "11:10 AM"
+      },
+      arrival: {
+        location: "Austin Airport (AUS)",
+        time: "4:45 PM"
+      },
+      duration: "3h 35m",
+      cost: "Booked",
+      notes: "Flight NH 7332 - 2 hour layover in SFO, final leg home to Austin",
+      confirmationCode: "NH 7332"
     }
   ]
 };

@@ -19,15 +19,15 @@ export const day5Data = {
     "21:00 - Explore local speakeasy scene"
   ],
   weather: {
-    temp: "8-16°C (46-61°F)",
+    temp: "46-61°F",
     condition: "Cool autumn weather, perfect for temple hopping", 
     icon: "🍂"
   },
   accommodations: {
     name: "FreeBreakfast&WIFI*NEAR→Nijojo*CozyKoreanMom'sHome",
     address: "180 Jurakumawari Nishimachi, Nakagyō-ku, Kyōto-shi, Kyōto-fu 604-8402, Japan",
-    checkIn: "November 30, 15:00 (3:00 PM)",
-    checkOut: "December 2, 11:00 AM",
+    checkIn: "November 29, after 3:00 PM",
+    checkOut: "December 2, before 11:00 AM",
     confirmationCode: "HMCDYDAZEN",
     host: "寧保 (Ningbao)",
     notes: "Cozy Korean mom's home near Nijo Castle with free breakfast & WiFi. Local Kyoto tax ¥200 per guest per night collected at check-in. Host greets you - reach out for check-in instructions.",

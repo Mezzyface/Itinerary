@@ -252,6 +252,10 @@ p, div, span {
   --shiba-shadow-subtle: none;
   --shiba-shadow-s: none;
   --shiba-shadow-l: none;
+  /* Ensure text is visible on black backgrounds */
+  --shiba-text-primary: rgb(255, 255, 255);
+  --shiba-text-secondary: rgb(200, 200, 200);
+  --shiba-text-muted: rgb(150, 150, 150);
 }
 
 .theme-oled .shiba-window {
