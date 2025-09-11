@@ -41,13 +41,13 @@ export const day5Data = {
   },
   mandatoryActivities: [
     {
-      id: "campsite-departure",
+      id: "camping-checkout",
       time: "10:00",
-      title: "🏕️ Pack Up Fujikawa Camp",
+      title: "🏕️ Fujikawa Camp Checkout",
       duration: "30 minutes",
       location: "Fujikawa Camp",
       status: "upcoming",
-      notes: "Leisurely morning departure - pack campsite and prepare for Kyoto adventure",
+      notes: "Pack up tent and camping equipment, prepare for Kyoto travel",
       confirmationCode: "TENT112925"
     },
     {
@@ -63,17 +63,14 @@ export const day5Data = {
       ]
     },
     {
-      id: "airbnb-checkin-kyoto",
+      id: "kyoto-checkin",
       time: "15:00",
-      title: "🏠 Kyoto Airbnb Check-in",
+      title: "🏠 Kyoto House Check-in",
       duration: "30 minutes",
-      location: "Central Kyoto Airbnb",
+      location: "Korean Mom's Home, Nakagyo Ward",
       status: "upcoming",
-      notes: "Check in to central Kyoto accommodation at 3PM and prepare for Higashiyama temple district tour",
-      confirmationCode: "HMCDYDAZEN",
-      links: [
-        { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMCDYDAZEN" }
-      ]
+      notes: "Check into cozy Korean mom's home near Nijo Castle with free breakfast",
+      confirmationCode: "HMCDYDAZEN"
     },
     {
       id: "premium-tonkatsu-dinner",

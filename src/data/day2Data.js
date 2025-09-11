@@ -38,16 +38,14 @@ export const day2Data = {
   },
   mandatoryActivities: [
     {
-      id: "early-departure", 
+      id: "shibuya-checkout",
       time: "07:00",
-      title: "🎒 Check out & Head to Shinjuku",
-      duration: "30 minutes", 
-      location: "Ebisu → Shinjuku Station",
+      title: "🎒 Tokyo Shibuya Checkout",
+      duration: "30 minutes",
+      location: "HJ SHIBUYA b01, Ebisu",
       status: "upcoming",
-      notes: "Check out of Ebisu accommodation, travel to Shinjuku Station via JR Yamanote Line",
-      links: [
-        { name: "Route to Shinjuku", url: "https://japantravel.navitime.com/en/area/jp/route/result/?start=00002025&goal=%7B%27lat%27%3A35.689579%2C%27lon%27%3A139.700676%2C%27spot%27%3A%2702011-00004254%27%7D&start_name=Ebisu(Tokyo)&goal_name=Shinjuku&cid=&from=route_top_search_box&date_time=2025-11-27T07%3A00&ferry=false&taxi=false" }
-      ]
+      notes: "Check out of Ebisu accommodation, prepare for day trip to Mount Fuji",
+      confirmationCode: "HMRDDYA2N4"
     },
     {
       id: "luggage-storage",
@@ -84,6 +82,16 @@ export const day2Data = {
       links: [
         { name: "Fujikyu Railway", url: "https://www.fujikyu-railway.jp/en/" }
       ]
+    },
+    {
+      id: "ryokan-checkin",
+      time: "20:00",
+      title: "🏠 Mount Fuji Ryokan Check-in",
+      duration: "30 minutes",
+      location: "Aoiso (あおい荘), Kawaguchiko",
+      status: "upcoming",
+      notes: "Check into traditional ryokan with best Mount Fuji views. Host Shogo greets you.",
+      confirmationCode: "HMKCYQKHZZ"
     }
   ],
   timeBlocks: [

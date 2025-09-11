@@ -42,6 +42,16 @@ export const day4Data = {
   },
   mandatoryActivities: [
     {
+      id: "ryokan-checkout",
+      time: "10:00",
+      title: "🎒 Mount Fuji Ryokan Checkout",
+      duration: "30 minutes",
+      location: "Aoiso (あおい荘), Kawaguchiko",
+      status: "upcoming",
+      notes: "Check out of traditional ryokan and prepare for camping adventure",
+      confirmationCode: "HMKCYQKHZZ"
+    },
+    {
       id: "camping-supplies",
       time: "11:30",
       title: "🛒 Supply Shopping for Camping",
@@ -54,18 +64,14 @@ export const day4Data = {
       ]
     },
     {
-      id: "campsite-checkin",
+      id: "camping-checkin",
       time: "15:00",
-      title: "🏕️ Fujikawa Camp Check-in & Equipment Pickup",
-      duration: "2 hours",
+      title: "🏕️ Fujikawa Camp Check-in",
+      duration: "30 minutes",
       location: "Fujikawa Camp",
       status: "upcoming",
-      notes: "Check-in to tent site (7.5m×7.5m), pick up camping equipment rental from reception, set up tent and explore camping grounds",
-      confirmationCode: "TENT112925",
-      links: [
-        { name: "Fujikawa Camp Site", url: "https://fujikawa-camp.jp/" },
-        { name: "Equipment Rental", url: "https://hinata-rental.me/" }
-      ]
+      notes: "Check-in to tent site and set up camping equipment",
+      confirmationCode: "TENT112925"
     }
   ],
   timeBlocks: [

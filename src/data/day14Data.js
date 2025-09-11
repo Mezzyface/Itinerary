@@ -27,77 +27,11 @@ export const day14Data = {
     ]
   },
   dayPlan: [
-    "Morning checkout from Hiroshima guesthouse",
-    "Shinkansen journey back to Tokyo",
-    "Afternoon check-in to Shinjuku accommodation",
-    "Evening OpenBook Tokyo visit"
+
   ],
-  mandatoryActivities: [
-    {
-      id: "hiroshima-checkout",
-      title: "Hiroshima Guesthouse Checkout",
-      time: "10:00 AM",
-      location: "Hondori, Naka Ward, Hiroshima",
-      duration: "30 minutes",
-      status: "upcoming",
-      notes: "Pack and say goodbye to Kunihiro's family"
-    },
-    {
-      id: "shinjuku-checkin",
-      title: "Shinjuku Accommodation Check-in",
-      time: "3:00 PM",
-      location: "6-chōme-5-7 Shinjuku, Bell Tree 101",
-      duration: "30 minutes",
-      status: "upcoming",
-      confirmationCode: "HM5S8ARHRQ",
-      notes: "Host Okamoto greets guests. Card key provided. 7 mins walk to Shinjuku Gyoen."
-    }
-  ],
+  mandatoryActivities: [],
   timeBlocks: [
-    {
-      id: "hiroshima-tokyo-travel",
-      title: "Hiroshima to Tokyo Shinkansen",
-      timeRange: "10:30 AM - 2:30 PM",
-      options: [
-        {
-          title: "Nozomi Shinkansen Direct",
-          duration: "4 hours",
-          cost: "¥19,440",
-          description: "Fastest direct service to Tokyo Station",
-          notes: "Most convenient option, arrives with time for check-in"
-        },
-        {
-          title: "Hikari Shinkansen",
-          duration: "4.5 hours",
-          cost: "¥18,040",
-          description: "Slightly slower but still comfortable",
-          notes: "Good value option with similar comfort level"
-        }
-      ]
-    },
-    {
-      id: "openbook-tokyo-evening",
-      title: "OpenBook Tokyo Cultural Experience",
-      timeRange: "7:00 PM - 9:00 PM",
-      options: [
-        {
-          title: "Complete OpenBook Experience",
-          duration: "2 hours",
-          cost: "Free entry + purchases",
-          description: "Explore this unique bookstore and cultural space that combines literature, art, and community",
-          notes: "OpenBook Tokyo is more than a bookstore - it's a cultural hub with curated books, events, and creative atmosphere",
-          photoSpots: ["Unique book displays", "Art installations", "Cultural space interior"],
-          coordinates: { lat: 35.6598, lng: 139.7007 },
-          breakdown: {
-            "Books/Items": "¥2,000-5,000 (optional)"
-          },
-          links: [{
-            name: "OpenBook Tokyo About",
-            url: "https://www.openbook.tokyo/pages/about"
-          }]
-        }
-      ]
-    }
+
   ],
   transportation: [
     {

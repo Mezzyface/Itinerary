@@ -27,6 +27,16 @@ export const day16Data = {
   ],
   mandatoryActivities: [
     {
+      id: "tokyo-final-checkout",
+      time: "10:00",
+      title: "🏠 Tokyo Shinjuku Final Checkout",
+      duration: "30 minutes",
+      location: "Shinjuku Apartment",
+      status: "upcoming",
+      notes: "Final checkout from Tokyo accommodation, prepare for departure",
+      confirmationCode: "HM5S8ARHRQ"
+    },
+    {
       id: "small-worlds-tokyo",
       title: "Small Worlds Tokyo",
       time: "9:30 AM",

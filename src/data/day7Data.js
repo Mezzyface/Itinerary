@@ -10,13 +10,6 @@ export const day7Data = {
   coordinates: { lat: 34.6937, lng: 135.5023 },
   overview: "🚄 Final Kyoto checkout and comfortable travel day to Osaka! Check into unique capsule hotel experience in Shinsaibashi district and begin exploring Osaka's vibrant food and entertainment culture.",
   dayPlan: [
-    "11:00 - Checkout from Kyoto accommodation",
-    "12:00 - Travel from Kyoto to Osaka",
-    "14:00 - Arrive in Osaka Shinsaibashi area",
-    "15:00 - Check into Capsule Hotel Asahi Plaza",
-    "16:00 - Explore Shinsaibashi district",
-    "18:00 - Osaka street food exploration",
-    "20:00 - Evening entertainment district discovery"
   ],
   weather: {
     temp: "46-59°F",
@@ -44,11 +37,11 @@ export const day7Data = {
     {
       id: "kyoto-checkout",
       time: "11:00",
-      title: "🏠 Kyoto Accommodation Checkout",
+      title: "🏠 Kyoto House Checkout",
       duration: "30 minutes",
-      location: "Kyoto Airbnb",
+      location: "Korean Mom's Home, Nakagyo Ward",
       status: "upcoming",
-      notes: "Final checkout from cozy Korean mom's home. Ensure all belongings packed for Osaka travel.",
+      notes: "Check out of cozy Korean mom's home, prepare for Osaka travel",
       confirmationCode: "HMCDYDAZEN"
     },
     {
@@ -64,57 +57,18 @@ export const day7Data = {
       ]
     },
     {
-      id: "osaka-capsule-checkin",
+      id: "osaka-checkin",
       time: "15:00",
-      title: "🏨 Capsule Hotel Check-in",
+      title: "🏨 Osaka Capsule Hotel Check-in",
       duration: "30 minutes",
       location: "Capsule Hotel Asahi Plaza Shinsaibashi",
       status: "upcoming",
-      notes: "Check into unique capsule hotel experience in Shinsaibashi. Contact host for check-in instructions.",
-      confirmationCode: "HMK2TXC8PM",
-      links: [
-        { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMK2TXC8PM" }
-      ]
+      notes: "Check into unique capsule hotel experience in Shinsaibashi district",
+      confirmationCode: "HMK2TXC8PM"
     }
   ],
   timeBlocks: [
-    {
-      id: "shinsaibashi-exploration",
-      timeRange: "16:00 - 18:00",
-      title: "🏙️ Shinsaibashi District Discovery",
-      options: [
-        {
-          title: "🏙️ Shinsaibashi Shopping & Culture Walk",
-          duration: "2 hours",
-          cost: "Free",
-          photoSpots: ["Iconic Shinsaibashi signs", "Shopping arcades", "Urban atmosphere", "District landmarks"],
-          coordinates: { lat: 34.6721, lng: 135.5016 },
-          description: "Explore the heart of Osaka's premier shopping and entertainment district",
-          hours: "16:00-18:00",
-          notes: "Get oriented with Osaka's vibrant city energy and discover local shops"
-        }
-      ]
-    },
-    {
-      id: "osaka-street-food",
-      timeRange: "18:00 - 20:00",
-      title: "🍜 Osaka Street Food Adventure",
-      options: [
-        {
-          title: "🍜 Dotonbori Food Crawl",
-          duration: "2 hours",
-          cost: "¥2,000-3,000",
-          photoSpots: ["Takoyaki preparation", "Street food vendors", "Dotonbori canal views", "Food culture"],
-          coordinates: { lat: 34.6686, lng: 135.5020 },
-          description: "Experience Osaka's famous street food culture - takoyaki, okonomiyaki, and local specialties",
-          hours: "18:00-20:00",
-          breakdown: {
-            "Street Food Sampling": "¥2,000-3,000"
-          },
-          notes: "Must-try: takoyaki (octopus balls), okonomiyaki, and kushikatsu"
-        }
-      ]
-    }
+
   ],
   transportation: [
     {

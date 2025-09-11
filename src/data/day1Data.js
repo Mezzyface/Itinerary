@@ -48,9 +48,9 @@ export const day1Data = {
       ]
     },
     {
-      id: "airbnb-checkin",
+      id: "shibuya-checkin",
       time: "16:00",
-      title: "🏠 Airbnb Check-in",
+      title: "🏠 Tokyo Shibuya Check-in",
       duration: "30 minutes",
       location: "HJ SHIBUYA b01",
       status: "upcoming",
