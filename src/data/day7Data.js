@@ -9,8 +9,11 @@ export const day7Data = {
   country: "Japan", 
   coordinates: { lat: 34.6937, lng: 135.5023 },
   overview: "🚄 Final Kyoto checkout and comfortable travel day to Osaka! Check into unique capsule hotel experience in Shinsaibashi district and begin exploring Osaka's vibrant food and entertainment culture.",
-  dayPlan: [
-  ],
+  dayPlan: {
+    morning: "11:00 - Kyoto checkout, Final Kyoto exploration before departure",
+    afternoon: "12:00 - Travel to Osaka, 15:00 - Capsule hotel check-in, Shinsaibashi exploration",
+    evening: "Free evening in Osaka - explore Dotonbori district and street food scene"
+  },
   weather: {
     temp: "46-59°F",
     condition: "Cool December weather, perfect for city exploration", 

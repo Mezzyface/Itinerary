@@ -9,8 +9,11 @@ export const day9Data = {
   country: "Japan", 
   coordinates: { lat: 34.6937, lng: 135.5023 },
   overview: "Evening visit to OpenBook Tokyo, a unique bookstore and cultural space in Shibuya",
-  dayPlan: [
-  ],
+  dayPlan: {
+    morning: "11:00 - Osaka capsule hotel checkout, Final Osaka exploration",
+    afternoon: "Travel from Osaka to Fukuoka, 16:00 - Fukuoka house check-in",
+    evening: "Free evening in Fukuoka - explore Hakata Ward neighborhood"
+  },
   weather: {
     temp: "46-59°F",
     condition: "Cool December morning, good for final exploration", 

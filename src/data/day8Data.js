@@ -9,14 +9,11 @@ export const day8Data = {
   country: "Japan", 
   coordinates: { lat: 34.6937, lng: 135.5023 },
   overview: "🏯 Full day exploring Osaka's historic castle, vibrant neighborhoods, and famous food scene! Experience traditional culture and modern city life in Japan's kitchen capital.",
-  dayPlan: [
-    "09:00 - Visit Osaka Castle and grounds",
-    "12:00 - Lunch in Osaka Castle Park area", 
-    "14:00 - Explore Sumiyoshi Taisha Shrine",
-    "16:00 - Shopping in Namba district",
-    "18:00 - Famous Osaka dinner experience",
-    "20:00 - Evening entertainment in Dotonbori"
-  ],
+  dayPlan: {
+    morning: "Free morning in Osaka - explore city attractions and neighborhoods",
+    afternoon: "12:00 - Osaka-style okonomiyaki lunch, 16:00 - Denden Town electronics shopping",
+    evening: "Free evening for Dotonbori district and Osaka nightlife exploration"
+  },
   weather: {
     temp: "46-59°F",
     condition: "Cool December weather, perfect for sightseeing", 
@@ -42,7 +39,57 @@ export const day8Data = {
 
   ],
   timeBlocks: [
-  
+    {
+      id: "osaka-okonomiyaki-lunch",
+      timeRange: "12:00 - 13:30",
+      title: "🍳 Osaka-style Okonomiyaki",
+      options: [
+        {
+          title: "🍳 Authentic Osaka Okonomiyaki",
+          duration: "1.5 hours",
+          cost: "¥1,000-2,000",
+          photoSpots: ["Okonomiyaki preparation", "Teppan cooking", "Local restaurant atmosphere", "Food close-ups"],
+          coordinates: { lat: 34.6937, lng: 135.5023 },
+          description: "Experience authentic Osaka-style okonomiyaki - the city's signature dish! Mixed batter with ingredients cooked together, topped with sauce and mayonnaise.",
+          hours: "11:00-21:00 (typical)",
+          links: [
+            { name: "Okonomiyaki Guide", url: "https://www.osaka-info.jp/en/gourmet/okonomiyaki/" }
+          ],
+          notes: "Osaka-style: ingredients mixed into batter, cooked as one pancake. Try classic pork or seafood varieties!",
+          breakdown: {
+            "Basic okonomiyaki": "¥800-1,200",
+            "Premium toppings": "¥200-500",
+            "Drinks": "¥300-500"
+          }
+        }
+      ]
+    },
+    {
+      id: "denden-town",
+      timeRange: "16:00 - 18:00", 
+      title: "🎮 Denden Town Electronics District",
+      options: [
+        {
+          title: "🎮 Denden Town Electronics District",
+          duration: "2 hours",
+          cost: "¥2,000-10,000+",
+          photoSpots: ["Retro electronics shops", "Anime/manga stores", "Gaming arcades", "Vintage tech displays"],
+          coordinates: { lat: 34.6564, lng: 135.5061 },
+          description: "Osaka's premier electronics and otaku district - the Akihabara of Kansai! Multi-story buildings packed with electronics, retro gaming, anime goods, and tech treasures.",
+          hours: "10:00-20:00 (most shops)",
+          links: [
+            { name: "Denden Town Map", url: "https://www.denden-town.or.jp/en/" },
+            { name: "Electronics Shopping Guide", url: "https://www.japan-guide.com/e/e4013.html" }
+          ],
+          notes: "5-6 blocks of electronics paradise! Famous for retro gaming, PC parts, anime goods, and unique Japanese tech",
+          breakdown: {
+            "Retro games/consoles": "¥1,000-5,000",
+            "Electronics/gadgets": "¥2,000-8,000+",
+            "Anime merchandise": "¥500-3,000"
+          }
+        }
+      ]
+    }
   ],
   transportation: [
  

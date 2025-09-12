@@ -26,9 +26,11 @@ export const day15Data = {
       { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ" }
     ]
   },
-  dayPlan: [
-    "Evening visit to Janai Coffee speakeasy"
-  ],
+  dayPlan: {
+    morning: "Free morning in Tokyo - explore modern districts and attractions",
+    afternoon: "Tokyo culture and technology exploration - pop culture scenes",
+    evening: "19:00 - Janai Coffee speakeasy visit"
+  },
   mandatoryActivities: [
     {
       id: "janai-coffee",

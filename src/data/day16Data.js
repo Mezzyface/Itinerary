@@ -18,13 +18,11 @@ export const day16Data = {
       url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ"
     }]
   },
-  dayPlan: [
-    "Morning visit to Small Worlds Tokyo",
-    "Lunch near Ariake/Odaiba at 12:00 PM",
-    "Travel to Haneda Airport by 2:00 PM",
-    "4:25 PM departure to Austin via San Francisco (ANA NH 7010)",
-    "Arrive Austin 4:45 PM same day (time zones)"
-  ],
+  dayPlan: {
+    morning: "10:00 - Final Tokyo checkout, 09:30 - Small Worlds Tokyo miniature museum",
+    afternoon: "12:00 - Farewell lunch in Odaiba, 14:00 - Travel to Haneda Airport",
+    evening: "16:25 - Flight departure to Austin via San Francisco"
+  },
   mandatoryActivities: [
     {
       id: "tokyo-final-checkout",

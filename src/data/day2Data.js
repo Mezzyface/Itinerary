@@ -9,14 +9,11 @@ export const day2Data = {
   country: "Japan", 
   coordinates: { lat: 35.6585, lng: 139.7016 },
   overview: "Morning shrine-hopping for goshuin collection, then deep dive into Harajuku culture - from kawaii Takeshita Street to sophisticated Omotesando. End with critical train departure to Mount Fuji area for ryokan stay.",
-  dayPlan: [
-    "07:00 - Check out and travel to Shinjuku Station",
-    "07:30 - Store luggage and start shrine hopping",
-    "10:00 - Explore Harajuku and Takeshita Street",
-    "14:00 - Lunch and shopping in Omotesando",
-    "17:30 - Depart for Mount Fuji via express train",
-    "20:00 - Check into traditional ryokan with Fuji views"
-  ],
+  dayPlan: {
+    morning: "07:00 - Shibuya checkout, Shrine hopping adventure (Meiji Shrine, Togo-jinja)",
+    afternoon: "Harajuku cultural exploration - Takeshita Street, Cat Street, Omotesando Hills",
+    evening: "15:30 - CRITICAL Mount Fuji train departure, 20:00 - Ryokan check-in"
+  },
   weather: {
     temp: "50-63°F",
     condition: "Cool autumn weather", 

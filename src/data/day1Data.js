@@ -9,13 +9,11 @@ export const day1Data = {
   country: "Japan", 
   coordinates: { lat: 35.6585, lng: 139.7016 },
   overview: "Exploring Tokyo's vibrant Shibuya district with easy access to Ebisu and nearby attractions.",
-  dayPlan: [
-    "13:00 - Arrive at Haneda Airport and travel to Ebisu",
-    "16:00 - Check into Airbnb accommodation", 
-    "16:30 - Optional visit to Ebisu Shrine for Goshuincho",
-    "18:00 - Evening exploration of Shibuya district",
-    "20:00 - Dinner and drinks at local bars (A10 or Lost Bar)"
-  ],
+  dayPlan: {
+    morning: "Flight arrival day",
+    afternoon: "13:00 - Haneda Airport arrival, 16:00 - Shibuya check-in, Optional Ebisu Shrine visit",
+    evening: "Shibuya district exploration - bars, Pokemon Center, or Scramble Crossing views"
+  },
   weather: {
     temp: "59°F",
     condition: "Clear", 

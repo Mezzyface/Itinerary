@@ -9,14 +9,11 @@ export const day4Data = {
   country: "Japan", 
   coordinates: { lat: 35.5135, lng: 138.7661 },
   overview: "🏕️ Camping adventure near Mount Fuji! Outdoor experience with tent site accommodation, surrounded by nature and mountain views. Perfect way to connect with Japan's natural beauty.",
-  dayPlan: [
-    "11:30 - Pick up camping supplies near campsite",
-    "15:00 - Check-in and pick up rental equipment",
-    "15:30 - Set up tent and camp site",
-    "17:00 - Nature hiking and Mount Fuji photography",
-    "19:00 - Camping dinner and stargazing",
-    "21:00 - Campfire and traditional outdoor experience"
-  ],
+  dayPlan: {
+    morning: "10:00 - Ryokan checkout, 11:30 - Camping supply shopping and preparation",
+    afternoon: "15:00 - Campsite check-in, tent setup and equipment organization",
+    evening: "Full camping experience - outdoor cooking, campfire, stargazing under Mount Fuji"
+  },
   weather: {
     temp: "41-54°F",
     condition: "Cool autumn weather, perfect for camping", 

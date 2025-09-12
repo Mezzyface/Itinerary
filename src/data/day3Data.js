@@ -9,14 +9,11 @@ export const day3Data = {
   country: "Japan", 
   coordinates: { lat: 35.5077, lng: 138.7592 },
   overview: "🗻 Flexible Fuji Views Day! A relaxed day at Mount Fuji with optional photography at Chureito Pagoda, traditional Hoto lunch, lakeside shrine exploration, and maple festival. All activities are optional - perfect for a leisurely exploration day.",
-  dayPlan: [
-    "08:00 - Optional Chureito Pagoda photography",
-    "12:00 - Optional traditional Hoto lunch",
-    "14:00 - Optional lakeside shrine exploration", 
-    "16:00 - Flexible time for lake activities or rest",
-    "17:00 - Optional maple festival exploration",
-    "Evening - Traditional dinner and Mount Fuji views"
-  ],
+  dayPlan: {
+    morning: "08:00 - Chureito Pagoda photography & Mount Fuji views, Arakura Shrine goshuin",
+    afternoon: "12:00 - Traditional Hoto lunch, 14:00 - Kawaguchi Asama-jinja lakeside shrine",
+    evening: "Scenic Mount Fuji exploration - Natural Living Center, Oishi Park, Maple Corridor"
+  },
   weather: {
     temp: "46-59°F",
     condition: "Clear skies ideal for Fuji views", 

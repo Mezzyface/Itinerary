@@ -26,9 +26,11 @@ export const day11Data = {
       { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMT2E4C89P" }
     ]
   },
-  dayPlan: [
-  
-  ],
+  dayPlan: {
+    morning: "11:00 - Fukuoka checkout, Travel from Fukuoka to Hiroshima",
+    afternoon: "15:00 - Hiroshima apartment check-in, Initial city exploration",
+    evening: "Free evening in Hiroshima - explore local neighborhoods and dining"
+  },
   mandatoryActivities: [
     {
       id: "fukuoka-checkout",

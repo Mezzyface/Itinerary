@@ -26,12 +26,40 @@ export const day14Data = {
       { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ" }
     ]
   },
-  dayPlan: [
-
-  ],
+  dayPlan: {
+    morning: "Free morning in Tokyo - full day exploration available",
+    afternoon: "Tokyo neighborhood exploration - Shinjuku, Harajuku, or other districts",
+    evening: "Free evening for Tokyo dining, shopping, or entertainment"
+  },
   mandatoryActivities: [],
   timeBlocks: [
-
+    {
+      id: "pokemon-cafe-lunch",
+      timeRange: "12:00 - 14:00",
+      title: "🎮 Pokemon Cafe Experience",
+      options: [
+        {
+          title: "🎮 Pokemon Cafe Nihonbashi",
+          duration: "2 hours",
+          cost: "¥3,000-5,000",
+          photoSpots: ["Pokemon-themed dishes", "Character decorations", "Interactive dining experience", "Limited edition merchandise"],
+          coordinates: { lat: 35.6812, lng: 139.7671 },
+          description: "Experience the official Pokemon Cafe with character-themed dishes, interactive dining, and exclusive merchandise. Reservations highly recommended!",
+          hours: "10:30-22:00 (reservation required)",
+          links: [
+            { name: "Pokemon Cafe Official", url: "https://www.pokemoncenter.com/cafe" },
+            { name: "Reservation System", url: "https://reserve.pokemon-cafe.jp/" },
+            { name: "Navigate to Cafe", url: "https://maps.app.goo.gl/pokemon-cafe-nihonbashi" }
+          ],
+          notes: "Must make reservation in advance! Features seasonal Pokemon-themed menu items and exclusive cafe merchandise.",
+          breakdown: {
+            "Pokemon-themed meal": "¥2,000-3,500",
+            "Drinks": "¥800-1,200",
+            "Merchandise": "¥1,000-3,000+"
+          }
+        }
+      ]
+    }
   ],
   transportation: [
     {

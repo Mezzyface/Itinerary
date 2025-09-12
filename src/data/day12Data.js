@@ -26,11 +26,38 @@ export const day12Data = {
       { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMT2E4C89P" }
     ]
   },
-  dayPlan: [
-  ],
+  dayPlan: {
+    morning: "Free morning in Hiroshima - explore city center and local attractions",
+    afternoon: "12:00 - Hiroshima-style okonomiyaki lunch, Peace Memorial Park exploration",
+    evening: "Free evening in Hiroshima - local dining and neighborhood exploration"
+  },
   mandatoryActivities: [],
   timeBlocks: [
-
+    {
+      id: "hiroshima-okonomiyaki-lunch",
+      timeRange: "12:00 - 13:30",
+      title: "🍳 Hiroshima-style Okonomiyaki",
+      options: [
+        {
+          title: "🍳 Authentic Hiroshima Okonomiyaki",
+          duration: "1.5 hours",
+          cost: "¥1,000-2,000",
+          photoSpots: ["Layered okonomiyaki preparation", "Teppan cooking process", "Local restaurant atmosphere", "Food close-ups"],
+          coordinates: { lat: 34.3853, lng: 132.4553 },
+          description: "Experience authentic Hiroshima-style okonomiyaki - the regional specialty! Layered construction with noodles, cabbage, and ingredients stacked separately.",
+          hours: "11:00-21:00 (typical)",
+          links: [
+            { name: "Hiroshima Okonomiyaki Guide", url: "https://www.hiroshima-navi.or.jp/en/gourmet/okonomiyaki/" }
+          ],
+          notes: "Hiroshima-style: ingredients layered separately with yakisoba noodles, different from Osaka style. Much more cabbage!",
+          breakdown: {
+            "Basic okonomiyaki": "¥800-1,200",
+            "Premium toppings": "¥200-500",
+            "Drinks": "¥300-500"
+          }
+        }
+      ]
+    }
   ],
   transportation: [
    

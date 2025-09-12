@@ -26,8 +26,11 @@ export const day13Data = {
       { name: "Reservation Details", url: "https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HM5S8ARHRQ" }
     ]
   },
-  dayPlan: [
-  ],
+  dayPlan: {
+    morning: "10:00 - Hiroshima checkout, Travel from Hiroshima to Tokyo",
+    afternoon: "15:00 - Tokyo Shinjuku check-in, Initial neighborhood exploration",
+    evening: "Free evening in Tokyo Shinjuku district"
+  },
   mandatoryActivities: [
     {
       id: "hiroshima-checkout",
