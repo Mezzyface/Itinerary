@@ -106,11 +106,25 @@ const TripOverview = ({ tripData, onDaySelect }) => {
                       <div className="shiba-text-secondary text-sm mb-4">
                         {day.dayPlan ? (
                           <div className="space-y-2">
-                            {day.dayPlan.map((item, index) => (
-                              <div key={index} className="group-hover:translate-x-1 transition-transform duration-300 leading-relaxed">
-                                {item}
+                            {typeof day.dayPlan === 'object' && !Array.isArray(day.dayPlan) ? (
+                              // Handle dayPlan as object with morning/afternoon/evening
+                              Object.entries(day.dayPlan).map(([timeOfDay, activity], index) => (
+                                <div key={index} className="group-hover:translate-x-1 transition-transform duration-300 leading-relaxed">
+                                  <span className="capitalize font-medium text-emerald-400">{timeOfDay}:</span> {activity}
+                                </div>
+                              ))
+                            ) : Array.isArray(day.dayPlan) ? (
+                              // Handle dayPlan as array (legacy format)
+                              day.dayPlan.map((item, index) => (
+                                <div key={index} className="group-hover:translate-x-1 transition-transform duration-300 leading-relaxed">
+                                  {item}
+                                </div>
+                              ))
+                            ) : (
+                              <div className="group-hover:translate-x-1 transition-transform duration-300 leading-relaxed">
+                                {day.dayPlan}
                               </div>
-                            ))}
+                            )}
                           </div>
                         ) : (
                           <span className="italic">{day.overview}</span>
